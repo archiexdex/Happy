@@ -11,11 +11,8 @@ import GoogleMaps
 
 class GoogleMapViewController: UIViewController {
 
-    // MARK: - IBOutlet
-    
     // MARK: - Variable
     var locationManager : LocationManager?
-    
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
@@ -23,7 +20,6 @@ class GoogleMapViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         locationManager = LocationManager.sharedInstance
-        locationManager?.requestAlwaysInUse()
         
     }
 
@@ -33,8 +29,6 @@ class GoogleMapViewController: UIViewController {
     }
     
     // MARK: - Function
-    
-
     func startGM() {
 
         let gps = locationManager?.getLocation()
@@ -44,19 +38,23 @@ class GoogleMapViewController: UIViewController {
         }
         let camera = GMSCameraPosition.camera(withLatitude: (gps?.latitude)! , longitude: (gps?.longitude)!, zoom: 6)
         
+        // GMSMapView
         let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         mapView.isMyLocationEnabled = true
+        mapView.delegate = self
         self.view = mapView
         
         let marker = GMSMarker()
         marker.position = CLLocationCoordinate2DMake( (gps?.latitude)!, (gps?.longitude)!)
         marker.icon = UIImage(named: "roo.png")
-        marker.title = locationManager?.getCountry()
         marker.map = mapView
         
 
     }
     
+    func alertInfo() {
+        
+    }
     
     // MARK: - IBAction
     @IBAction func startToGetGPS(_ sender: AnyObject) {
@@ -66,4 +64,29 @@ class GoogleMapViewController: UIViewController {
         
     }
 
+}
+
+extension GoogleMapViewController : GMSMapViewDelegate {
+    func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
+        //
+        print(">> \(mapView) \n>>>\(marker.userData)")
+        let flag = mapView.clipsToBounds
+        
+        if flag {
+            let ptr = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+            
+            DispatchQueue.global(priority: DispatchQueue.GlobalQueuePriority.default).async(execute: {
+                
+                DispatchQueue.main.async(execute: {
+                    //
+                    self.present(ptr, animated: true, completion: nil)
+                })
+            })
+            
+            
+        }
+        
+        
+        return flag
+    }
 }

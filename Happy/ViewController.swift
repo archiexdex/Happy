@@ -12,17 +12,20 @@ import Foundation
 
 class ViewController: UIViewController {
 
-    var captureSession:AVCaptureSession?
-    var videoPreviewLayer:AVCaptureVideoPreviewLayer?
-    var stillImageOutput: AVCaptureStillImageOutput?
+    
+    // MARK: - Variable
+    var captureSession      : AVCaptureSession?
+    var videoPreviewLayer   : AVCaptureVideoPreviewLayer?
+    var stillImageOutput    : AVCaptureStillImageOutput?
+    var locationManager     : LocationManager?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
         //self.viewSetting()
-        
-        
+        locationManager = LocationManager.sharedInstance
+        locationManager?.requestAlwaysInUse()
         
     }
 
@@ -79,6 +82,11 @@ class ViewController: UIViewController {
         captureSession?.startRunning()
     }
     
+    @IBAction func tett(_ sender: AnyObject) {
+        
+//        let ptr = UIViewController(nibName: <#T##String?#>, bundle: <#T##Bundle?#>)
+//        
+    }
     
     
 }
