@@ -39,7 +39,7 @@ class LocationManager: NSObject {
         
         locationManager.activityType = .fitness
         locationManager.delegate     = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
+        locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
     }
     
     func requestAlwaysInUse() {
@@ -48,7 +48,7 @@ class LocationManager: NSObject {
         
         locationManager.activityType = .fitness
         locationManager.delegate     = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
+        locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation
     }
     
     // MARK: - Function
