@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     var theButton           : UIButton!
     var theBiggerView       : UIImageView!
     var theArrow            : UIImageView!
+//    var theTime             : NSTimeZone!
+//    var timeZone            : Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,9 +30,11 @@ class ViewController: UIViewController {
         
         locationManager = LocationManager.sharedInstance
 //        locationManager?.requestAlwaysInUse()
+        
         self.viewSetting()
         self.buttonSetting()
         self.biggerViewSetting()
+        self.arrowViewSetting()
     }
 
     override func didReceiveMemoryWarning() {
@@ -128,7 +132,10 @@ class ViewController: UIViewController {
     
     func arrowViewSetting() {
         
-        
+        let image = UIImage(named: "arrow.png")
+        self.theArrow = UIImageView(image: image)
+        self.theArrow.frame = CGRect(x: 192, y: 252, width: 256, height: 256)
+        self.view.addSubview(theArrow)
         
     }
     
