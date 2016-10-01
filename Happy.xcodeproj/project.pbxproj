@@ -12,10 +12,10 @@
 		EC331C071D9FD1420031F1D9 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC331C061D9FD1410031F1D9 /* LocationManager.swift */; };
 		EC331C091D9FD1D70031F1D9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC331C081D9FD1D70031F1D9 /* CoreLocation.framework */; };
 		EC331C0B1D9FDE320031F1D9 /* roo.png in Resources */ = {isa = PBXBuildFile; fileRef = EC331C0A1D9FDE320031F1D9 /* roo.png */; };
-		EC331C111D9FEAA50031F1D9 /* myView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC331C101D9FEAA50031F1D9 /* myView.swift */; };
 		EC331C131D9FEAC10031F1D9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC331C121D9FEAC10031F1D9 /* QuartzCore.framework */; };
 		EC331C161D9FFEFE0031F1D9 /* InfoAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC331C141D9FFEFE0031F1D9 /* InfoAlertViewController.swift */; };
 		EC331C1B1DA051EB0031F1D9 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = EC331C1A1DA051EB0031F1D9 /* arrow.png */; };
+		EC3FD13F1DA06F6E00235130 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3FD13E1DA06F6E00235130 /* Constants.swift */; };
 		EC52B08B1D9F863B00FC0725 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52B08A1D9F863B00FC0725 /* AppDelegate.swift */; };
 		EC52B08D1D9F863B00FC0725 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52B08C1D9F863B00FC0725 /* ViewController.swift */; };
 		EC52B0901D9F863B00FC0725 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC52B08E1D9F863B00FC0725 /* Main.storyboard */; };
@@ -53,10 +53,10 @@
 		EC331C061D9FD1410031F1D9 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		EC331C081D9FD1D70031F1D9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		EC331C0A1D9FDE320031F1D9 /* roo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roo.png; sourceTree = "<group>"; };
-		EC331C101D9FEAA50031F1D9 /* myView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myView.swift; sourceTree = "<group>"; };
 		EC331C121D9FEAC10031F1D9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		EC331C141D9FFEFE0031F1D9 /* InfoAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoAlertViewController.swift; sourceTree = "<group>"; };
 		EC331C1A1DA051EB0031F1D9 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		EC3FD13E1DA06F6E00235130 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EC52B0871D9F863B00FC0725 /* Happy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Happy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC52B08A1D9F863B00FC0725 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC52B08C1D9F863B00FC0725 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -142,9 +142,9 @@
 			children = (
 				EC52B08A1D9F863B00FC0725 /* AppDelegate.swift */,
 				EC52B08C1D9F863B00FC0725 /* ViewController.swift */,
-				EC331C101D9FEAA50031F1D9 /* myView.swift */,
 				EC331C061D9FD1410031F1D9 /* LocationManager.swift */,
 				EC331C041D9FD0020031F1D9 /* GoogleMapViewController.swift */,
+				EC3FD13E1DA06F6E00235130 /* Constants.swift */,
 				EC331C141D9FFEFE0031F1D9 /* InfoAlertViewController.swift */,
 				EC52B08E1D9F863B00FC0725 /* Main.storyboard */,
 				EC52B0941D9F863B00FC0725 /* Assets.xcassets */,
@@ -392,13 +392,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC331C111D9FEAA50031F1D9 /* myView.swift in Sources */,
 				EC331C161D9FFEFE0031F1D9 /* InfoAlertViewController.swift in Sources */,
 				EC331C051D9FD0020031F1D9 /* GoogleMapViewController.swift in Sources */,
 				EC331C071D9FD1420031F1D9 /* LocationManager.swift in Sources */,
 				EC52B08D1D9F863B00FC0725 /* ViewController.swift in Sources */,
 				EC52B08B1D9F863B00FC0725 /* AppDelegate.swift in Sources */,
 				EC52B0931D9F863B00FC0725 /* Happy.xcdatamodeld in Sources */,
+				EC3FD13F1DA06F6E00235130 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,6 +553,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9H65KG3QQT;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Happy",
+				);
 				INFOPLIST_FILE = Happy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "HSIN-CHIH-YANG.Happy";
@@ -568,6 +572,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9H65KG3QQT;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Happy",
+				);
 				INFOPLIST_FILE = Happy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "HSIN-CHIH-YANG.Happy";

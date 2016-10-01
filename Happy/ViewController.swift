@@ -20,8 +20,8 @@ class ViewController: UIViewController {
     var theButton           : UIButton!
     var theBiggerView       : UIImageView!
     var theArrow            : UIImageView!
-//    var theTime             : NSTimeZone!
-//    var timeZone            : Int!
+    var theTime             : Timer?
+    var count               : Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +30,8 @@ class ViewController: UIViewController {
         
         locationManager = LocationManager.sharedInstance
 //        locationManager?.requestAlwaysInUse()
-        
+        self.theTime = Timer.scheduledTimer(timeInterval: 0.0, target: self, selector: #selector(ViewController.counter), userInfo: nil, repeats: true)
+        self.count = 0
         self.viewSetting()
         self.buttonSetting()
         self.biggerViewSetting()
@@ -111,6 +112,7 @@ class ViewController: UIViewController {
         self.theBiggerView.frame = rect
         // Set
         self.theBiggerView.alpha = 0
+        
         self.view.addSubview(self.theBiggerView)
     }
     
@@ -139,7 +141,15 @@ class ViewController: UIViewController {
         
     }
     
-    
+    // MARK: - Function
+    func counter() {
+        self.count = self.count! + 1
+        if self.count == 10000 {
+            self.theArrow.alpha = 1 - self.theArrow.alpha
+            self.count = 0
+        }
+//        print(self.count)
+    }
     
 }
 

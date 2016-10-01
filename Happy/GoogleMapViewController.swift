@@ -35,39 +35,26 @@ class GoogleMapViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        startGM()
+        startGM()  
     }
     
     // MARK: - Function
     func startGM() {
 
-        let gps = self.locationManager?.getLocation()
-        
-        if gps == nil {
-            print("GPS Fail")
-            
-            return
-        }
-        
         // google map setting
-        camera = GMSCameraPosition.camera(withLatitude: (gps?.latitude)! , longitude: (gps?.longitude)!, zoom: 17.219)
+        camera = GMSCameraPosition.camera(withLatitude: Constants().startLocation.latitude, longitude: Constants().startLocation.longitude , zoom: Float(Constants().startZoom) )
         
         mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera!)
         mapView!.isMyLocationEnabled = true
         mapView?.setMinZoom(17.219, maxZoom: 19.87)
         mapView!.delegate = self
         self.view = mapView
-        
-//        let marker = GMSMarker()
-//        marker.position = CLLocationCoordinate2DMake( (gps?.latitude)!, (gps?.longitude)!)
-//        marker.icon = UIImage(named: "roo.png")
-//        marker.map = mapView
-        
-
+     
     }
     
     func generate() {
@@ -82,6 +69,7 @@ class GoogleMapViewController: UIViewController {
         
     }
     
+    // TODO: Degenerate
     func deGenerate() {
         
         
@@ -90,7 +78,7 @@ class GoogleMapViewController: UIViewController {
     func alertInfo() {
         
         let alertController = UIAlertController(title: "title", message: "message", preferredStyle: .alert)
-        let doneAction = UIAlertAction(title: "done", style: .default) { (action) in
+        let doneAction = UIAlertAction(title: "done", style: .cancel) { (action) in
             //
             let ptr = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
             DispatchQueue.global(priority: DispatchQueue.GlobalQueuePriority.default).async(execute: {
@@ -102,7 +90,7 @@ class GoogleMapViewController: UIViewController {
                 })
             })
         }
-        let cancelAction = UIAlertAction(title: "cancel", style: .cancel) { (action) in
+        let cancelAction = UIAlertAction(title: "cancel", style: .default) { (action) in
             //
             
         }
@@ -113,7 +101,7 @@ class GoogleMapViewController: UIViewController {
     
     // MARK: - IBAction
     @IBAction func startToGetGPS(_ sender: AnyObject) {
-        locationManager?.start()
+//        locationManager?.start()
         startGM()
     }
 
@@ -128,8 +116,8 @@ extension GoogleMapViewController : GMSMapViewDelegate {
         let flag = mapView.clipsToBounds
         print("my location\(mapView.myLocation)")
         print("camera zoom \(self.mapView?.camera.zoom)")
-        print(self.mapView?.maxZoom)
-        print(gps)
+        
+        
         if flag {
             alertInfo()
         }
@@ -145,7 +133,6 @@ extension GoogleMapViewController : GMSMapViewDelegate {
         print("camera zoom \(zoom)")
         
         if zoom! > Float(18.442) && self.isGoastAppear == false {
-            print("OAOAOAOAO")
             isGoastAppear = true
             generate()
         }
