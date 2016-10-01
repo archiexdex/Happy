@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     var stillImageOutput    : AVCaptureStillImageOutput?
     var locationManager     : LocationManager?
     var theButton           : UIButton!
+    var theBiggerView       : UIImageView!
+    var theArrow            : UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,7 +30,7 @@ class ViewController: UIViewController {
 //        locationManager?.requestAlwaysInUse()
         self.viewSetting()
         self.buttonSetting()
-        
+        self.biggerViewSetting()
     }
 
     override func didReceiveMemoryWarning() {
@@ -47,7 +49,7 @@ class ViewController: UIViewController {
         
     }
     
-    // MARK: - Function
+    // MARK: - View Setting
     func viewSetting() {
         
         captureSession = AVCaptureSession()
@@ -91,24 +93,45 @@ class ViewController: UIViewController {
         let image = UIImage(named: "roo.png")
         theButton.setImage(image, for: .normal)
         theButton.backgroundColor = .black
-        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(self.longPressGesture) )
+        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(ViewController.longPressGesture(sender:)))
         theButton.addGestureRecognizer(longPress)
         
         self.view.addSubview(theButton)
         
     }
     
-    func longPressGesture() {
+    func biggerViewSetting() {
+        
+        let rect = CGRect(x: 384, y: 750, width: 75, height: 100)
+        self.theBiggerView = UIImageView(image: UIImage(named: "roo.png"))
+        self.theBiggerView.frame = rect
+        // Set
+        self.theBiggerView.alpha = 0
+        self.view.addSubview(self.theBiggerView)
+    }
+    
+    func longPressGesture(sender : UILongPressGestureRecognizer){
+        print("Long tap")
+        if sender.state == .ended {
+            print("UIGestureRecognizerStateEnded")
+            //Do Whatever You want on End of Gesture
+            self.theBiggerView.alpha = 0
+            self.viewDidAppear(true)
+        }
+        else if sender.state == .began {
+            print("UIGestureRecognizerStateBegan.")
+            //Do Whatever You want on Began of Gesture
+            self.theBiggerView.alpha = 1
+            self.viewDidAppear(true)
+        }
+    }
+    
+    func arrowViewSetting() {
+        
+        
         
     }
     
-    @IBAction func tett(_ sender: AnyObject) {
-        
-//        let ptr = self.storyboard?.instantiateViewController(withIdentifier: "InfoAlertViewController")        as! InfoAlertViewController
-        
-        
-        
-    }
     
     
 }

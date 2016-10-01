@@ -15,6 +15,7 @@
 		EC331C111D9FEAA50031F1D9 /* myView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC331C101D9FEAA50031F1D9 /* myView.swift */; };
 		EC331C131D9FEAC10031F1D9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC331C121D9FEAC10031F1D9 /* QuartzCore.framework */; };
 		EC331C161D9FFEFE0031F1D9 /* InfoAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC331C141D9FFEFE0031F1D9 /* InfoAlertViewController.swift */; };
+		EC331C1B1DA051EB0031F1D9 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = EC331C1A1DA051EB0031F1D9 /* arrow.png */; };
 		EC52B08B1D9F863B00FC0725 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52B08A1D9F863B00FC0725 /* AppDelegate.swift */; };
 		EC52B08D1D9F863B00FC0725 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52B08C1D9F863B00FC0725 /* ViewController.swift */; };
 		EC52B0901D9F863B00FC0725 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC52B08E1D9F863B00FC0725 /* Main.storyboard */; };
@@ -55,6 +56,7 @@
 		EC331C101D9FEAA50031F1D9 /* myView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myView.swift; sourceTree = "<group>"; };
 		EC331C121D9FEAC10031F1D9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		EC331C141D9FFEFE0031F1D9 /* InfoAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoAlertViewController.swift; sourceTree = "<group>"; };
+		EC331C1A1DA051EB0031F1D9 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
 		EC52B0871D9F863B00FC0725 /* Happy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Happy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC52B08A1D9F863B00FC0725 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC52B08C1D9F863B00FC0725 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +149,7 @@
 				EC52B08E1D9F863B00FC0725 /* Main.storyboard */,
 				EC52B0941D9F863B00FC0725 /* Assets.xcassets */,
 				EC331C0A1D9FDE320031F1D9 /* roo.png */,
+				EC331C1A1DA051EB0031F1D9 /* arrow.png */,
 				EC52B0961D9F863B00FC0725 /* LaunchScreen.storyboard */,
 				EC52B0991D9F863B00FC0725 /* Info.plist */,
 				EC52B0911D9F863B00FC0725 /* Happy.xcdatamodeld */,
@@ -315,6 +318,7 @@
 				EC52B0981D9F863B00FC0725 /* LaunchScreen.storyboard in Resources */,
 				EC52B0951D9F863B00FC0725 /* Assets.xcassets in Resources */,
 				EC331C0B1D9FDE320031F1D9 /* roo.png in Resources */,
+				EC331C1B1DA051EB0031F1D9 /* arrow.png in Resources */,
 				EC52B0901D9F863B00FC0725 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

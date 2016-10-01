@@ -20,13 +20,30 @@ class myView: UIView {
         // 1. Get a drawing zone
         let context = UIGraphicsGetCurrentContext()!
         
-        context.setLineWidth(2)
+        context.setLineWidth(3)
         context.setStrokeColor(red: 0, green: 0, blue: 0, alpha: 1)
+//        self.arrow(context: context)
         self.line(context: context)
         
     }
     
     // MARK: - Function
+    func arrow( context : CGContext ) {
+        
+        print("OAO")
+        // center (192,256)
+        context.move(to: CGPoint(x: 188, y: 256))
+        context.addLine(to: CGPoint(x: 196, y: 256))
+        context.drawPath(using: .stroke)
+        
+        context.move(to: CGPoint(x: 192, y : 252) )
+        context.beginPath()
+        context.addLine(to: CGPoint(x: 196, y : 256))
+        context.addLine(to: CGPoint(x: 192, y: 260) )
+        context.closePath()
+        context.drawPath(using: .fill)
+        
+    }
     func line( context : CGContext ) {
         
         let theWidth  = Int(self.bounds.size.width)
