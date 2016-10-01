@@ -20,6 +20,22 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>I will get your camera</string>
+	<key>NSContactsUsageDescription</key>
+	<string>I will get your concact</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>I will get your GPS</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>I will get your GPS</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>I will get your micropone</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>I will get your photos</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>location</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -41,13 +57,5 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>NSCameraUsageDescription</key>
-	<string>I will get your camera</string>
-	<key>NSContactsUsageDescription</key>
-	<string>I will get your concact</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>I will get your micropone</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>I will get your photos</string>
 </dict>
 </plist>

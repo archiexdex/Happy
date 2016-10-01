@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		494FE794D5682EA6F98EF3BC /* Pods_Happy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFD19F7091AC98FFC63D7789 /* Pods_Happy.framework */; };
+		EC331C051D9FD0020031F1D9 /* GoogleMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC331C041D9FD0020031F1D9 /* GoogleMapViewController.swift */; };
+		EC331C071D9FD1420031F1D9 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC331C061D9FD1410031F1D9 /* LocationManager.swift */; };
+		EC331C091D9FD1D70031F1D9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC331C081D9FD1D70031F1D9 /* CoreLocation.framework */; };
 		EC52B08B1D9F863B00FC0725 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52B08A1D9F863B00FC0725 /* AppDelegate.swift */; };
 		EC52B08D1D9F863B00FC0725 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52B08C1D9F863B00FC0725 /* ViewController.swift */; };
 		EC52B0901D9F863B00FC0725 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC52B08E1D9F863B00FC0725 /* Main.storyboard */; };
@@ -43,6 +46,9 @@
 		6308B8B9E0AC1E585B4E3ED2 /* Pods-Happy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Happy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Happy/Pods-Happy.release.xcconfig"; sourceTree = "<group>"; };
 		BFD19F7091AC98FFC63D7789 /* Pods_Happy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Happy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E40C3313C774A7C3C8A404FE /* Pods-Happy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Happy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Happy/Pods-Happy.debug.xcconfig"; sourceTree = "<group>"; };
+		EC331C041D9FD0020031F1D9 /* GoogleMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleMapViewController.swift; sourceTree = "<group>"; };
+		EC331C061D9FD1410031F1D9 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		EC331C081D9FD1D70031F1D9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		EC52B0871D9F863B00FC0725 /* Happy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Happy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC52B08A1D9F863B00FC0725 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC52B08C1D9F863B00FC0725 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC331C091D9FD1D70031F1D9 /* CoreLocation.framework in Frameworks */,
 				EC52B0C61D9FC5F200FC0725 /* MapKit.framework in Frameworks */,
 				EC52B0BD1D9F865C00FC0725 /* AVFoundation.framework in Frameworks */,
 				494FE794D5682EA6F98EF3BC /* Pods_Happy.framework in Frameworks */,
@@ -126,9 +133,10 @@
 		EC52B0891D9F863B00FC0725 /* Happy */ = {
 			isa = PBXGroup;
 			children = (
-				EC52B0C01D9FAAD600FC0725 /* Happy.entitlements */,
 				EC52B08A1D9F863B00FC0725 /* AppDelegate.swift */,
 				EC52B08C1D9F863B00FC0725 /* ViewController.swift */,
+				EC331C061D9FD1410031F1D9 /* LocationManager.swift */,
+				EC331C041D9FD0020031F1D9 /* GoogleMapViewController.swift */,
 				EC52B0C31D9FBA9F00FC0725 /* goastView.swift */,
 				EC52B0C11D9FB4EE00FC0725 /* customButton.swift */,
 				EC52B08E1D9F863B00FC0725 /* Main.storyboard */,
@@ -136,6 +144,7 @@
 				EC52B0961D9F863B00FC0725 /* LaunchScreen.storyboard */,
 				EC52B0991D9F863B00FC0725 /* Info.plist */,
 				EC52B0911D9F863B00FC0725 /* Happy.xcdatamodeld */,
+				EC52B0C01D9FAAD600FC0725 /* Happy.entitlements */,
 			);
 			path = Happy;
 			sourceTree = "<group>";
@@ -161,6 +170,7 @@
 		EC52B0BB1D9F865C00FC0725 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EC331C081D9FD1D70031F1D9 /* CoreLocation.framework */,
 				EC52B0C51D9FC5F200FC0725 /* MapKit.framework */,
 				EC52B0BC1D9F865C00FC0725 /* AVFoundation.framework */,
 				BFD19F7091AC98FFC63D7789 /* Pods_Happy.framework */,
@@ -242,6 +252,9 @@
 						DevelopmentTeam = 9H65KG3QQT;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.InterAppAudio = {
 								enabled = 0;
 							};
@@ -369,6 +382,8 @@
 			files = (
 				EC52B0C21D9FB4EE00FC0725 /* customButton.swift in Sources */,
 				EC52B0C41D9FBA9F00FC0725 /* goastView.swift in Sources */,
+				EC331C051D9FD0020031F1D9 /* GoogleMapViewController.swift in Sources */,
+				EC331C071D9FD1420031F1D9 /* LocationManager.swift in Sources */,
 				EC52B08D1D9F863B00FC0725 /* ViewController.swift in Sources */,
 				EC52B08B1D9F863B00FC0725 /* AppDelegate.swift in Sources */,
 				EC52B0931D9F863B00FC0725 /* Happy.xcdatamodeld in Sources */,
@@ -525,6 +540,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9H65KG3QQT;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Happy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "HSIN-CHIH-YANG.Happy";
@@ -539,6 +555,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9H65KG3QQT;
+				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Happy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "HSIN-CHIH-YANG.Happy";
