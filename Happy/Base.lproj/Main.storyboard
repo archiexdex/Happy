@@ -93,12 +93,17 @@
                         <viewControllerLayoutGuide type="bottom" id="E1o-Zp-MIe"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3MO-F4-sZS">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBu-VE-Z3C">
-                                <frame key="frameInset" minX="361" minY="332" width="46" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="照妖鏡頭-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="8ZO-ag-e5S">
+                                <frame key="frameInset" width="414" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBu-VE-Z3C">
+                                <frame key="frameInset" minX="184" minY="607" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.69570071489295415" green="1" blue="0.40319386628408393" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="cxU-Yk-LL3" kind="show" id="EkP-wd-35O"/>
@@ -110,7 +115,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0gl-Qf-CcD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1350" y="449.99999999999994"/>
+            <point key="canvasLocation" x="-1350.7246376811595" y="449.18478260869568"/>
         </scene>
         <!--Google Map View Controller-->
         <scene sceneID="qTC-OY-oaO">
@@ -121,7 +126,7 @@
                         <viewControllerLayoutGuide type="bottom" id="3Bq-ke-ID2"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mi9-Hm-hNl">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="SvG-Oz-BAZ"/>
@@ -146,7 +151,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="0.82904436357205658" blue="0.96157258251304667" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -155,5 +160,137 @@
             </objects>
             <point key="canvasLocation" x="374" y="45"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Koi-H9-9ki">
+            <objects>
+                <viewController id="TjW-j2-Rav" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Uck-t2-Fzb"/>
+                        <viewControllerLayoutGuide type="bottom" id="mDo-q4-Vrl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lwD-4e-WVO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="照妖鏡頭-11.png" translatesAutoresizingMaskIntoConstraints="NO" id="xkU-k4-OgC">
+                                <frame key="frameInset" minX="108" minY="450" width="134" height="197"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="照妖鏡頭-07.png" translatesAutoresizingMaskIntoConstraints="NO" id="ofV-qg-kHK">
+                                <frame key="frameInset" width="414" height="728"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="201610011618441000.png" translatesAutoresizingMaskIntoConstraints="NO" id="l1O-hZ-1AN">
+                                <frame key="frameInset" minX="213" minY="40" width="154" height="181"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="照妖鏡頭-05.png" translatesAutoresizingMaskIntoConstraints="NO" id="6LY-mp-i94">
+                                <frame key="frameInset" minX="225" minY="10" width="122" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="HP" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7E7-1C-1at">
+                                <frame key="frameInset" minX="213" minY="17" width="37" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="textColor" red="1" green="0.1354814423" blue="0.23895417930000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="取消淨化" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BbA-Fc-aeA">
+                                <frame key="frameInset" minX="31" minY="28" width="80" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9ne-v5-J6k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="856.52173913043487" y="-115.7608695652174"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="UKd-7r-h6l">
+            <objects>
+                <viewController id="xP9-13-fPd" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Rjg-bI-oo2"/>
+                        <viewControllerLayoutGuide type="bottom" id="IXb-I5-Unm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="TOO-0h-dIa">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="照妖鏡頭-03.png" translatesAutoresizingMaskIntoConstraints="NO" id="f2m-qK-JMS">
+                                <frame key="frameInset" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9dq-3z-MYs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1615.9420289855075" y="-116.57608695652175"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xgQ-st-ite">
+            <objects>
+                <viewController id="ITu-2E-gqA" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ics-8f-rfi"/>
+                        <viewControllerLayoutGuide type="bottom" id="jG6-PA-xCy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bLa-cz-YtY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="照妖鏡頭-10.png" translatesAutoresizingMaskIntoConstraints="NO" id="fga-SY-71O">
+                                <frame key="frameInset" width="375" height="678"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V9U-2g-CoL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4108" y="-100.29985007496252"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="sWP-4R-XYx">
+            <objects>
+                <viewController id="L9H-Bg-CW5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RaS-8A-boE"/>
+                        <viewControllerLayoutGuide type="bottom" id="MsK-xs-iLb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kaA-oH-mFw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="照妖鏡頭-04.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ea2-ct-mhb">
+                                <frame key="frameInset" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4gI-3k-Y8j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2414.4927536231885" y="-116.57608695652175"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="201610011618441000.png" width="3125" height="5558"/>
+        <image name="照妖鏡頭-01.png" width="3125" height="5558"/>
+        <image name="照妖鏡頭-03.png" width="3125" height="5558"/>
+        <image name="照妖鏡頭-04.png" width="3125" height="5558"/>
+        <image name="照妖鏡頭-05.png" width="1128" height="550"/>
+        <image name="照妖鏡頭-07.png" width="3125" height="5558"/>
+        <image name="照妖鏡頭-10.png" width="3125" height="5558"/>
+        <image name="照妖鏡頭-11.png" width="1388" height="2250"/>
+    </resources>
 </document>

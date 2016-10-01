@@ -144,7 +144,7 @@ class ViewController: UIViewController {
     // MARK: - Function
     func counter() {
         self.count = self.count! + 1
-        if self.count == 10000 {
+        if self.count == 7000 {
             self.theArrow.alpha = 1 - self.theArrow.alpha
             self.count = 0
         }

@@ -11,11 +11,21 @@
 		EC331C051D9FD0020031F1D9 /* GoogleMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC331C041D9FD0020031F1D9 /* GoogleMapViewController.swift */; };
 		EC331C071D9FD1420031F1D9 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC331C061D9FD1410031F1D9 /* LocationManager.swift */; };
 		EC331C091D9FD1D70031F1D9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC331C081D9FD1D70031F1D9 /* CoreLocation.framework */; };
-		EC331C0B1D9FDE320031F1D9 /* roo.png in Resources */ = {isa = PBXBuildFile; fileRef = EC331C0A1D9FDE320031F1D9 /* roo.png */; };
 		EC331C131D9FEAC10031F1D9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC331C121D9FEAC10031F1D9 /* QuartzCore.framework */; };
 		EC331C161D9FFEFE0031F1D9 /* InfoAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC331C141D9FFEFE0031F1D9 /* InfoAlertViewController.swift */; };
-		EC331C1B1DA051EB0031F1D9 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = EC331C1A1DA051EB0031F1D9 /* arrow.png */; };
 		EC3FD13F1DA06F6E00235130 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3FD13E1DA06F6E00235130 /* Constants.swift */; };
+		EC3FD1611DA07BEC00235130 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD1551DA07BEC00235130 /* arrow.png */; };
+		EC3FD1621DA07BEC00235130 /* roo.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD1561DA07BEC00235130 /* roo.png */; };
+		EC3FD1631DA07BEC00235130 /* 照妖鏡頭-01.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD1571DA07BEC00235130 /* 照妖鏡頭-01.png */; };
+		EC3FD1641DA07BEC00235130 /* FinishFight.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD1581DA07BEC00235130 /* FinishFight.png */; };
+		EC3FD1651DA07BEC00235130 /* UserInfo.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD1591DA07BEC00235130 /* UserInfo.png */; };
+		EC3FD1661DA07BEC00235130 /* 照妖鏡頭-05.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD15A1DA07BEC00235130 /* 照妖鏡頭-05.png */; };
+		EC3FD1671DA07BEC00235130 /* 照妖鏡頭-06.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD15B1DA07BEC00235130 /* 照妖鏡頭-06.png */; };
+		EC3FD1681DA07BEC00235130 /* 照妖鏡頭-07.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD15C1DA07BEC00235130 /* 照妖鏡頭-07.png */; };
+		EC3FD1691DA07BEC00235130 /* 照妖鏡頭-10.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD15D1DA07BEC00235130 /* 照妖鏡頭-10.png */; };
+		EC3FD16A1DA07BEC00235130 /* 照妖鏡頭-11.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD15E1DA07BEC00235130 /* 照妖鏡頭-11.png */; };
+		EC3FD16B1DA07BEC00235130 /* 照妖鏡頭-12.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD15F1DA07BEC00235130 /* 照妖鏡頭-12.png */; };
+		EC3FD16C1DA07BEC00235130 /* 照妖鏡頭-13.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD1601DA07BEC00235130 /* 照妖鏡頭-13.png */; };
 		EC52B08B1D9F863B00FC0725 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52B08A1D9F863B00FC0725 /* AppDelegate.swift */; };
 		EC52B08D1D9F863B00FC0725 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52B08C1D9F863B00FC0725 /* ViewController.swift */; };
 		EC52B0901D9F863B00FC0725 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC52B08E1D9F863B00FC0725 /* Main.storyboard */; };
@@ -52,11 +62,21 @@
 		EC331C041D9FD0020031F1D9 /* GoogleMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleMapViewController.swift; sourceTree = "<group>"; };
 		EC331C061D9FD1410031F1D9 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		EC331C081D9FD1D70031F1D9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		EC331C0A1D9FDE320031F1D9 /* roo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roo.png; sourceTree = "<group>"; };
 		EC331C121D9FEAC10031F1D9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		EC331C141D9FFEFE0031F1D9 /* InfoAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoAlertViewController.swift; sourceTree = "<group>"; };
-		EC331C1A1DA051EB0031F1D9 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
 		EC3FD13E1DA06F6E00235130 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EC3FD1551DA07BEC00235130 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		EC3FD1561DA07BEC00235130 /* roo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roo.png; sourceTree = "<group>"; };
+		EC3FD1571DA07BEC00235130 /* 照妖鏡頭-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "照妖鏡頭-01.png"; sourceTree = "<group>"; };
+		EC3FD1581DA07BEC00235130 /* FinishFight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FinishFight.png; sourceTree = "<group>"; };
+		EC3FD1591DA07BEC00235130 /* UserInfo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UserInfo.png; sourceTree = "<group>"; };
+		EC3FD15A1DA07BEC00235130 /* 照妖鏡頭-05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "照妖鏡頭-05.png"; sourceTree = "<group>"; };
+		EC3FD15B1DA07BEC00235130 /* 照妖鏡頭-06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "照妖鏡頭-06.png"; sourceTree = "<group>"; };
+		EC3FD15C1DA07BEC00235130 /* 照妖鏡頭-07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "照妖鏡頭-07.png"; sourceTree = "<group>"; };
+		EC3FD15D1DA07BEC00235130 /* 照妖鏡頭-10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "照妖鏡頭-10.png"; sourceTree = "<group>"; };
+		EC3FD15E1DA07BEC00235130 /* 照妖鏡頭-11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "照妖鏡頭-11.png"; sourceTree = "<group>"; };
+		EC3FD15F1DA07BEC00235130 /* 照妖鏡頭-12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "照妖鏡頭-12.png"; sourceTree = "<group>"; };
+		EC3FD1601DA07BEC00235130 /* 照妖鏡頭-13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "照妖鏡頭-13.png"; sourceTree = "<group>"; };
 		EC52B0871D9F863B00FC0725 /* Happy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Happy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC52B08A1D9F863B00FC0725 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC52B08C1D9F863B00FC0725 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -115,6 +135,25 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		EC3FD1541DA07BEC00235130 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EC3FD1551DA07BEC00235130 /* arrow.png */,
+				EC3FD1561DA07BEC00235130 /* roo.png */,
+				EC3FD1571DA07BEC00235130 /* 照妖鏡頭-01.png */,
+				EC3FD1581DA07BEC00235130 /* FinishFight.png */,
+				EC3FD1591DA07BEC00235130 /* UserInfo.png */,
+				EC3FD15A1DA07BEC00235130 /* 照妖鏡頭-05.png */,
+				EC3FD15B1DA07BEC00235130 /* 照妖鏡頭-06.png */,
+				EC3FD15C1DA07BEC00235130 /* 照妖鏡頭-07.png */,
+				EC3FD15D1DA07BEC00235130 /* 照妖鏡頭-10.png */,
+				EC3FD15E1DA07BEC00235130 /* 照妖鏡頭-11.png */,
+				EC3FD15F1DA07BEC00235130 /* 照妖鏡頭-12.png */,
+				EC3FD1601DA07BEC00235130 /* 照妖鏡頭-13.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		EC52B07E1D9F863A00FC0725 = {
 			isa = PBXGroup;
 			children = (
@@ -148,8 +187,7 @@
 				EC331C141D9FFEFE0031F1D9 /* InfoAlertViewController.swift */,
 				EC52B08E1D9F863B00FC0725 /* Main.storyboard */,
 				EC52B0941D9F863B00FC0725 /* Assets.xcassets */,
-				EC331C0A1D9FDE320031F1D9 /* roo.png */,
-				EC331C1A1DA051EB0031F1D9 /* arrow.png */,
+				EC3FD1541DA07BEC00235130 /* Images */,
 				EC52B0961D9F863B00FC0725 /* LaunchScreen.storyboard */,
 				EC52B0991D9F863B00FC0725 /* Info.plist */,
 				EC52B0911D9F863B00FC0725 /* Happy.xcdatamodeld */,
@@ -315,11 +353,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC3FD1681DA07BEC00235130 /* 照妖鏡頭-07.png in Resources */,
+				EC3FD16A1DA07BEC00235130 /* 照妖鏡頭-11.png in Resources */,
+				EC3FD16C1DA07BEC00235130 /* 照妖鏡頭-13.png in Resources */,
 				EC52B0981D9F863B00FC0725 /* LaunchScreen.storyboard in Resources */,
+				EC3FD1641DA07BEC00235130 /* FinishFight.png in Resources */,
+				EC3FD1651DA07BEC00235130 /* UserInfo.png in Resources */,
 				EC52B0951D9F863B00FC0725 /* Assets.xcassets in Resources */,
-				EC331C0B1D9FDE320031F1D9 /* roo.png in Resources */,
-				EC331C1B1DA051EB0031F1D9 /* arrow.png in Resources */,
+				EC3FD1621DA07BEC00235130 /* roo.png in Resources */,
 				EC52B0901D9F863B00FC0725 /* Main.storyboard in Resources */,
+				EC3FD1671DA07BEC00235130 /* 照妖鏡頭-06.png in Resources */,
+				EC3FD1611DA07BEC00235130 /* arrow.png in Resources */,
+				EC3FD1631DA07BEC00235130 /* 照妖鏡頭-01.png in Resources */,
+				EC3FD1661DA07BEC00235130 /* 照妖鏡頭-05.png in Resources */,
+				EC3FD1691DA07BEC00235130 /* 照妖鏡頭-10.png in Resources */,
+				EC3FD16B1DA07BEC00235130 /* 照妖鏡頭-12.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
