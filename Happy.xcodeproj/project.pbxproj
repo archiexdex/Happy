@@ -16,6 +16,9 @@
 		EC52B0A31D9F863B00FC0725 /* HappyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52B0A21D9F863B00FC0725 /* HappyTests.swift */; };
 		EC52B0AE1D9F863B00FC0725 /* HappyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52B0AD1D9F863B00FC0725 /* HappyUITests.swift */; };
 		EC52B0BD1D9F865C00FC0725 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC52B0BC1D9F865C00FC0725 /* AVFoundation.framework */; };
+		EC52B0C21D9FB4EE00FC0725 /* customButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52B0C11D9FB4EE00FC0725 /* customButton.swift */; };
+		EC52B0C41D9FBA9F00FC0725 /* goastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52B0C31D9FBA9F00FC0725 /* goastView.swift */; };
+		EC52B0C61D9FC5F200FC0725 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC52B0C51D9FC5F200FC0725 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,9 @@
 		EC52B0AF1D9F863B00FC0725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC52B0BC1D9F865C00FC0725 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		EC52B0C01D9FAAD600FC0725 /* Happy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Happy.entitlements; sourceTree = "<group>"; };
+		EC52B0C11D9FB4EE00FC0725 /* customButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customButton.swift; sourceTree = "<group>"; };
+		EC52B0C31D9FBA9F00FC0725 /* goastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = goastView.swift; sourceTree = "<group>"; };
+		EC52B0C51D9FC5F200FC0725 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC52B0C61D9FC5F200FC0725 /* MapKit.framework in Frameworks */,
 				EC52B0BD1D9F865C00FC0725 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,6 +114,8 @@
 				EC52B0C01D9FAAD600FC0725 /* Happy.entitlements */,
 				EC52B08A1D9F863B00FC0725 /* AppDelegate.swift */,
 				EC52B08C1D9F863B00FC0725 /* ViewController.swift */,
+				EC52B0C31D9FBA9F00FC0725 /* goastView.swift */,
+				EC52B0C11D9FB4EE00FC0725 /* customButton.swift */,
 				EC52B08E1D9F863B00FC0725 /* Main.storyboard */,
 				EC52B0941D9F863B00FC0725 /* Assets.xcassets */,
 				EC52B0961D9F863B00FC0725 /* LaunchScreen.storyboard */,
@@ -137,6 +146,7 @@
 		EC52B0BB1D9F865C00FC0725 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EC52B0C51D9FC5F200FC0725 /* MapKit.framework */,
 				EC52B0BC1D9F865C00FC0725 /* AVFoundation.framework */,
 			);
 			name = Frameworks;
@@ -216,6 +226,9 @@
 							com.apple.Keychain = {
 								enabled = 0;
 							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
 						};
 					};
 					EC52B09D1D9F863B00FC0725 = {
@@ -284,6 +297,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC52B0C21D9FB4EE00FC0725 /* customButton.swift in Sources */,
+				EC52B0C41D9FBA9F00FC0725 /* goastView.swift in Sources */,
 				EC52B08D1D9F863B00FC0725 /* ViewController.swift in Sources */,
 				EC52B08B1D9F863B00FC0725 /* AppDelegate.swift in Sources */,
 				EC52B0931D9F863B00FC0725 /* Happy.xcdatamodeld in Sources */,

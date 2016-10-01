@@ -8,13 +8,11 @@
 
 import UIKit
 import AVFoundation
+import Foundation
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var theView: UIView!
     
-    
-//    var imagePicker         : UIImagePickerController!
     
     var captureSession:AVCaptureSession?
     var videoPreviewLayer:AVCaptureVideoPreviewLayer?
@@ -24,15 +22,31 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-//        imagePicker = UIImagePickerController()
-//        imagePicker.sourceType = .camera
-//        imagePicker.delegate = self
-//        
-//        self.present(imagePicker, animated: true, completion: nil)
+        //self.viewSetting()
         
-        // Init
+        
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+    }
+    
+    // MARK: - Function
+    func viewSetting() {
+        
         captureSession = AVCaptureSession()
-//        captureSession?.sessionPreset = AVCaptureSessionPresetPhoto
         
         let device = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
         
@@ -61,28 +75,11 @@ class ViewController: UIViewController {
         
         videoPreviewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
         videoPreviewLayer?.videoGravity = AVLayerVideoGravityResizeAspect
-        videoPreviewLayer?.frame = theView.layer.bounds
-        theView.layer.addSublayer(videoPreviewLayer!)
+        videoPreviewLayer?.frame = self.view.layer.bounds
+        self.view.layer.addSublayer(videoPreviewLayer!)
         captureSession?.startRunning()
-        
-        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        
-    }
-
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
-    }
+    
     
 }
 
