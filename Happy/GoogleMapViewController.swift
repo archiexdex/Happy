@@ -16,8 +16,8 @@ class GoogleMapViewController: UIViewController {
     var gps             : CLLocationCoordinate2D?
     var mapView         : GMSMapView?
     var camera          : GMSCameraPosition?
-    let goastNumber     : Int = 3
-    let goastList       : [CLLocationCoordinate2D] = []
+    var goastList       : [CLLocationCoordinate2D] = []
+    var isGoastAppear   : Bool = false
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
@@ -26,7 +26,9 @@ class GoogleMapViewController: UIViewController {
         // location setting
         locationManager = LocationManager.sharedInstance
         locationManager?.requestAlwaysInUse()
-        
+        goastList.append(CLLocationCoordinate2D(latitude: 25.051372,longitude: 121.553045) )
+        goastList.append(CLLocationCoordinate2D(latitude: 25.051510,longitude: 121.554134) )
+        goastList.append(CLLocationCoordinate2D(latitude: 25.051346,longitude: 121.549569) )
         
     }
 
@@ -60,17 +62,17 @@ class GoogleMapViewController: UIViewController {
         mapView!.delegate = self
         self.view = mapView
         
-        let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2DMake( (gps?.latitude)!, (gps?.longitude)!)
-        marker.icon = UIImage(named: "roo.png")
-        marker.map = mapView
+//        let marker = GMSMarker()
+//        marker.position = CLLocationCoordinate2DMake( (gps?.latitude)!, (gps?.longitude)!)
+//        marker.icon = UIImage(named: "roo.png")
+//        marker.map = mapView
         
 
     }
     
     func generate() {
         
-        for ptr in 0..<self.goastNumber {
+        for ptr in 0..<self.goastList.count {
             
             let marker = GMSMarker()
             marker.position = CLLocationCoordinate2DMake( goastList[ptr].latitude, goastList[ptr].longitude)
@@ -79,6 +81,12 @@ class GoogleMapViewController: UIViewController {
         }
         
     }
+    
+    func deGenerate() {
+        
+        
+    }
+    
     func alertInfo() {
         
         let alertController = UIAlertController(title: "title", message: "message", preferredStyle: .alert)
@@ -136,8 +144,14 @@ extension GoogleMapViewController : GMSMapViewDelegate {
         
         print("camera zoom \(zoom)")
         
-        if zoom! > Float(18.442) {
+        if zoom! > Float(18.442) && self.isGoastAppear == false {
+            print("OAOAOAOAO")
+            isGoastAppear = true
             generate()
+        }
+        else {
+            isGoastAppear = false
+            deGenerate()
         }
         
     }
