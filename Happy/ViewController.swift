@@ -12,8 +12,6 @@ import Foundation
 
 class ViewController: UIViewController {
 
-    
-    
     var captureSession:AVCaptureSession?
     var videoPreviewLayer:AVCaptureVideoPreviewLayer?
     var stillImageOutput: AVCaptureStillImageOutput?
@@ -23,6 +21,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         //self.viewSetting()
+        
         
         
     }
@@ -79,6 +78,7 @@ class ViewController: UIViewController {
         self.view.layer.addSublayer(videoPreviewLayer!)
         captureSession?.startRunning()
     }
+    
     
     
 }

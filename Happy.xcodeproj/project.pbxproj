@@ -11,6 +11,10 @@
 		EC331C051D9FD0020031F1D9 /* GoogleMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC331C041D9FD0020031F1D9 /* GoogleMapViewController.swift */; };
 		EC331C071D9FD1420031F1D9 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC331C061D9FD1410031F1D9 /* LocationManager.swift */; };
 		EC331C091D9FD1D70031F1D9 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC331C081D9FD1D70031F1D9 /* CoreLocation.framework */; };
+		EC331C0B1D9FDE320031F1D9 /* roo.png in Resources */ = {isa = PBXBuildFile; fileRef = EC331C0A1D9FDE320031F1D9 /* roo.png */; };
+		EC331C0F1D9FDF720031F1D9 /* gostImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC331C0E1D9FDF720031F1D9 /* gostImage.swift */; };
+		EC331C111D9FEAA50031F1D9 /* myView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC331C101D9FEAA50031F1D9 /* myView.swift */; };
+		EC331C131D9FEAC10031F1D9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC331C121D9FEAC10031F1D9 /* QuartzCore.framework */; };
 		EC52B08B1D9F863B00FC0725 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52B08A1D9F863B00FC0725 /* AppDelegate.swift */; };
 		EC52B08D1D9F863B00FC0725 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52B08C1D9F863B00FC0725 /* ViewController.swift */; };
 		EC52B0901D9F863B00FC0725 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC52B08E1D9F863B00FC0725 /* Main.storyboard */; };
@@ -20,8 +24,6 @@
 		EC52B0A31D9F863B00FC0725 /* HappyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52B0A21D9F863B00FC0725 /* HappyTests.swift */; };
 		EC52B0AE1D9F863B00FC0725 /* HappyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52B0AD1D9F863B00FC0725 /* HappyUITests.swift */; };
 		EC52B0BD1D9F865C00FC0725 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC52B0BC1D9F865C00FC0725 /* AVFoundation.framework */; };
-		EC52B0C21D9FB4EE00FC0725 /* customButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52B0C11D9FB4EE00FC0725 /* customButton.swift */; };
-		EC52B0C41D9FBA9F00FC0725 /* goastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52B0C31D9FBA9F00FC0725 /* goastView.swift */; };
 		EC52B0C61D9FC5F200FC0725 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC52B0C51D9FC5F200FC0725 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +51,10 @@
 		EC331C041D9FD0020031F1D9 /* GoogleMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleMapViewController.swift; sourceTree = "<group>"; };
 		EC331C061D9FD1410031F1D9 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		EC331C081D9FD1D70031F1D9 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		EC331C0A1D9FDE320031F1D9 /* roo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roo.png; sourceTree = "<group>"; };
+		EC331C0E1D9FDF720031F1D9 /* gostImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gostImage.swift; sourceTree = "<group>"; };
+		EC331C101D9FEAA50031F1D9 /* myView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myView.swift; sourceTree = "<group>"; };
+		EC331C121D9FEAC10031F1D9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		EC52B0871D9F863B00FC0725 /* Happy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Happy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC52B08A1D9F863B00FC0725 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC52B08C1D9F863B00FC0725 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,8 +71,6 @@
 		EC52B0AF1D9F863B00FC0725 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC52B0BC1D9F865C00FC0725 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		EC52B0C01D9FAAD600FC0725 /* Happy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Happy.entitlements; sourceTree = "<group>"; };
-		EC52B0C11D9FB4EE00FC0725 /* customButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customButton.swift; sourceTree = "<group>"; };
-		EC52B0C31D9FBA9F00FC0725 /* goastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = goastView.swift; sourceTree = "<group>"; };
 		EC52B0C51D9FC5F200FC0725 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -75,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC331C131D9FEAC10031F1D9 /* QuartzCore.framework in Frameworks */,
 				EC331C091D9FD1D70031F1D9 /* CoreLocation.framework in Frameworks */,
 				EC52B0C61D9FC5F200FC0725 /* MapKit.framework in Frameworks */,
 				EC52B0BD1D9F865C00FC0725 /* AVFoundation.framework in Frameworks */,
@@ -133,14 +138,15 @@
 		EC52B0891D9F863B00FC0725 /* Happy */ = {
 			isa = PBXGroup;
 			children = (
+				EC331C0E1D9FDF720031F1D9 /* gostImage.swift */,
 				EC52B08A1D9F863B00FC0725 /* AppDelegate.swift */,
 				EC52B08C1D9F863B00FC0725 /* ViewController.swift */,
+				EC331C101D9FEAA50031F1D9 /* myView.swift */,
 				EC331C061D9FD1410031F1D9 /* LocationManager.swift */,
 				EC331C041D9FD0020031F1D9 /* GoogleMapViewController.swift */,
-				EC52B0C31D9FBA9F00FC0725 /* goastView.swift */,
-				EC52B0C11D9FB4EE00FC0725 /* customButton.swift */,
 				EC52B08E1D9F863B00FC0725 /* Main.storyboard */,
 				EC52B0941D9F863B00FC0725 /* Assets.xcassets */,
+				EC331C0A1D9FDE320031F1D9 /* roo.png */,
 				EC52B0961D9F863B00FC0725 /* LaunchScreen.storyboard */,
 				EC52B0991D9F863B00FC0725 /* Info.plist */,
 				EC52B0911D9F863B00FC0725 /* Happy.xcdatamodeld */,
@@ -170,6 +176,7 @@
 		EC52B0BB1D9F865C00FC0725 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EC331C121D9FEAC10031F1D9 /* QuartzCore.framework */,
 				EC331C081D9FD1D70031F1D9 /* CoreLocation.framework */,
 				EC52B0C51D9FC5F200FC0725 /* MapKit.framework */,
 				EC52B0BC1D9F865C00FC0725 /* AVFoundation.framework */,
@@ -307,6 +314,7 @@
 			files = (
 				EC52B0981D9F863B00FC0725 /* LaunchScreen.storyboard in Resources */,
 				EC52B0951D9F863B00FC0725 /* Assets.xcassets in Resources */,
+				EC331C0B1D9FDE320031F1D9 /* roo.png in Resources */,
 				EC52B0901D9F863B00FC0725 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,9 +388,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC52B0C21D9FB4EE00FC0725 /* customButton.swift in Sources */,
-				EC52B0C41D9FBA9F00FC0725 /* goastView.swift in Sources */,
+				EC331C111D9FEAA50031F1D9 /* myView.swift in Sources */,
 				EC331C051D9FD0020031F1D9 /* GoogleMapViewController.swift in Sources */,
+				EC331C0F1D9FDF720031F1D9 /* gostImage.swift in Sources */,
 				EC331C071D9FD1420031F1D9 /* LocationManager.swift in Sources */,
 				EC52B08D1D9F863B00FC0725 /* ViewController.swift in Sources */,
 				EC52B08B1D9F863B00FC0725 /* AppDelegate.swift in Sources */,

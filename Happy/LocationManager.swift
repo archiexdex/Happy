@@ -37,7 +37,7 @@ class LocationManager: NSObject {
         
         locationManager.requestWhenInUseAuthorization()
         
-        locationManager.activityType = .other
+        locationManager.activityType = .fitness
         locationManager.delegate     = self
         locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
     }
@@ -46,7 +46,7 @@ class LocationManager: NSObject {
         
         locationManager.requestAlwaysAuthorization()
         
-        locationManager.activityType = .other
+        locationManager.activityType = .fitness
         locationManager.delegate     = self
         locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
     }

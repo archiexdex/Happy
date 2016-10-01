@@ -32,6 +32,11 @@
 	<string>I will get your micropone</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>I will get your photos</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>googlechromes</string>
+		<string>comgooglemaps</string>
+	</array>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>location</string>

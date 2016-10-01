@@ -11,6 +11,8 @@ import GoogleMaps
 
 class GoogleMapViewController: UIViewController {
 
+    // MARK: - IBOutlet
+    
     // MARK: - Variable
     var locationManager : LocationManager?
     
@@ -35,18 +37,6 @@ class GoogleMapViewController: UIViewController {
 
     func startGM() {
 
-        //        let camera = GMSCameraPosition.cameraWithLatitude(-33.86,
-        //                                                          longitude: 151.20, zoom: 6)
-        //        let mapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
-        //        mapView.myLocationEnabled = true
-        //        self.view = mapView
-        //
-        //        let marker = GMSMarker()
-        //        marker.position = CLLocationCoordinate2DMake(-33.86, 151.20)
-        //        marker.title = "Sydney"
-        //        marker.snippet = "Australia"
-        //        marker.map = mapView
-        
         let gps = locationManager?.getLocation()
         if gps == nil {
             print("GPS Fail")
@@ -60,6 +50,7 @@ class GoogleMapViewController: UIViewController {
         
         let marker = GMSMarker()
         marker.position = CLLocationCoordinate2DMake( (gps?.latitude)!, (gps?.longitude)!)
+        marker.icon = UIImage(named: "roo.png")
         marker.title = locationManager?.getCountry()
         marker.map = mapView
         
@@ -72,6 +63,7 @@ class GoogleMapViewController: UIViewController {
         
         locationManager?.start()
         startGM()
+        
     }
 
 }
