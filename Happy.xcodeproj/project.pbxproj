@@ -15,7 +15,6 @@
 		EC331C111D9FEAA50031F1D9 /* myView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC331C101D9FEAA50031F1D9 /* myView.swift */; };
 		EC331C131D9FEAC10031F1D9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC331C121D9FEAC10031F1D9 /* QuartzCore.framework */; };
 		EC331C161D9FFEFE0031F1D9 /* InfoAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC331C141D9FFEFE0031F1D9 /* InfoAlertViewController.swift */; };
-		EC331C171D9FFEFE0031F1D9 /* InfoAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC331C151D9FFEFE0031F1D9 /* InfoAlertViewController.xib */; };
 		EC52B08B1D9F863B00FC0725 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52B08A1D9F863B00FC0725 /* AppDelegate.swift */; };
 		EC52B08D1D9F863B00FC0725 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52B08C1D9F863B00FC0725 /* ViewController.swift */; };
 		EC52B0901D9F863B00FC0725 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC52B08E1D9F863B00FC0725 /* Main.storyboard */; };
@@ -56,7 +55,6 @@
 		EC331C101D9FEAA50031F1D9 /* myView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myView.swift; sourceTree = "<group>"; };
 		EC331C121D9FEAC10031F1D9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		EC331C141D9FFEFE0031F1D9 /* InfoAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoAlertViewController.swift; sourceTree = "<group>"; };
-		EC331C151D9FFEFE0031F1D9 /* InfoAlertViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoAlertViewController.xib; sourceTree = "<group>"; };
 		EC52B0871D9F863B00FC0725 /* Happy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Happy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC52B08A1D9F863B00FC0725 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC52B08C1D9F863B00FC0725 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -146,7 +144,6 @@
 				EC331C061D9FD1410031F1D9 /* LocationManager.swift */,
 				EC331C041D9FD0020031F1D9 /* GoogleMapViewController.swift */,
 				EC331C141D9FFEFE0031F1D9 /* InfoAlertViewController.swift */,
-				EC331C151D9FFEFE0031F1D9 /* InfoAlertViewController.xib */,
 				EC52B08E1D9F863B00FC0725 /* Main.storyboard */,
 				EC52B0941D9F863B00FC0725 /* Assets.xcassets */,
 				EC331C0A1D9FDE320031F1D9 /* roo.png */,
@@ -316,7 +313,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC52B0981D9F863B00FC0725 /* LaunchScreen.storyboard in Resources */,
-				EC331C171D9FFEFE0031F1D9 /* InfoAlertViewController.xib in Resources */,
 				EC52B0951D9F863B00FC0725 /* Assets.xcassets in Resources */,
 				EC331C0B1D9FDE320031F1D9 /* roo.png in Resources */,
 				EC52B0901D9F863B00FC0725 /* Main.storyboard in Resources */,

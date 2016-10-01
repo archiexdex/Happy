@@ -13,13 +13,20 @@ class GoogleMapViewController: UIViewController {
 
     // MARK: - Variable
     var locationManager : LocationManager?
+    var gps             : CLLocationCoordinate2D?
+    var mapView         : GMSMapView?
+    var camera          : GMSCameraPosition?
+    let goastNumber     : Int = 3
+    let goastList       : [CLLocationCoordinate2D] = []
     
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        // location setting
         locationManager = LocationManager.sharedInstance
+        locationManager?.requestAlwaysInUse()
+        
         
     }
 
@@ -28,20 +35,29 @@ class GoogleMapViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        startGM()
+    }
+    
     // MARK: - Function
     func startGM() {
 
-        let gps = locationManager?.getLocation()
+        let gps = self.locationManager?.getLocation()
+        
         if gps == nil {
             print("GPS Fail")
+            
             return
         }
-        let camera = GMSCameraPosition.camera(withLatitude: (gps?.latitude)! , longitude: (gps?.longitude)!, zoom: 6)
         
-        // GMSMapView
-        let mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
-        mapView.isMyLocationEnabled = true
-        mapView.delegate = self
+        // google map setting
+        camera = GMSCameraPosition.camera(withLatitude: (gps?.latitude)! , longitude: (gps?.longitude)!, zoom: 17.219)
+        
+        mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera!)
+        mapView!.isMyLocationEnabled = true
+        mapView?.setMinZoom(17.219, maxZoom: 19.87)
+        mapView!.delegate = self
         self.view = mapView
         
         let marker = GMSMarker()
@@ -52,41 +68,78 @@ class GoogleMapViewController: UIViewController {
 
     }
     
+    func generate() {
+        
+        for ptr in 0..<self.goastNumber {
+            
+            let marker = GMSMarker()
+            marker.position = CLLocationCoordinate2DMake( goastList[ptr].latitude, goastList[ptr].longitude)
+            marker.icon = UIImage(named: "roo.png")
+            marker.map = mapView
+        }
+        
+    }
     func alertInfo() {
         
-    }
-    
-    // MARK: - IBAction
-    @IBAction func startToGetGPS(_ sender: AnyObject) {
-        
-        locationManager?.start()
-        startGM()
-        
-    }
-
-}
-
-extension GoogleMapViewController : GMSMapViewDelegate {
-    func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
-        //
-        print(">> \(mapView) \n>>>\(marker.userData)")
-        let flag = mapView.clipsToBounds
-        
-        if flag {
+        let alertController = UIAlertController(title: "title", message: "message", preferredStyle: .alert)
+        let doneAction = UIAlertAction(title: "done", style: .default) { (action) in
+            //
             let ptr = self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-            
             DispatchQueue.global(priority: DispatchQueue.GlobalQueuePriority.default).async(execute: {
                 
                 DispatchQueue.main.async(execute: {
                     //
+                    
                     self.present(ptr, animated: true, completion: nil)
                 })
             })
+        }
+        let cancelAction = UIAlertAction(title: "cancel", style: .cancel) { (action) in
+            //
             
-            
+        }
+        alertController.addAction(cancelAction)
+        alertController.addAction(doneAction)
+        self.present(alertController, animated: true, completion: nil)
+    }
+    
+    // MARK: - IBAction
+    @IBAction func startToGetGPS(_ sender: AnyObject) {
+        locationManager?.start()
+        startGM()
+    }
+
+}
+
+// MARK: - GMSMapViewDelegate
+extension GoogleMapViewController : GMSMapViewDelegate {
+    
+    func mapView(_ mapView: GMSMapView, didTap marker: GMSMarker) -> Bool {
+        //
+        print(">> \(mapView) \n>>>\(marker.userData)")
+        let flag = mapView.clipsToBounds
+        print("my location\(mapView.myLocation)")
+        print("camera zoom \(self.mapView?.camera.zoom)")
+        print(self.mapView?.maxZoom)
+        print(gps)
+        if flag {
+            alertInfo()
         }
         
         
         return flag
     }
+    
+    func mapView(_ mapView: GMSMapView, didChange position: GMSCameraPosition) {
+        //
+        let zoom = self.mapView?.camera.zoom
+        
+        print("camera zoom \(zoom)")
+        
+        if zoom! > Float(18.442) {
+            generate()
+        }
+        
+    }
+    
 }

@@ -11,21 +11,23 @@ import AVFoundation
 import Foundation
 
 class ViewController: UIViewController {
-
     
     // MARK: - Variable
     var captureSession      : AVCaptureSession?
     var videoPreviewLayer   : AVCaptureVideoPreviewLayer?
     var stillImageOutput    : AVCaptureStillImageOutput?
     var locationManager     : LocationManager?
+    var theButton           : UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        //self.viewSetting()
+        
         locationManager = LocationManager.sharedInstance
-        locationManager?.requestAlwaysInUse()
+//        locationManager?.requestAlwaysInUse()
+        self.viewSetting()
+        self.buttonSetting()
         
     }
 
@@ -76,16 +78,36 @@ class ViewController: UIViewController {
         }
         
         videoPreviewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
-        videoPreviewLayer?.videoGravity = AVLayerVideoGravityResizeAspect
+        videoPreviewLayer?.videoGravity = AVLayerVideoGravityResizeAspectFill
         videoPreviewLayer?.frame = self.view.layer.bounds
         self.view.layer.addSublayer(videoPreviewLayer!)
         captureSession?.startRunning()
     }
     
+    func buttonSetting() {
+        
+        let rect = CGRect(x: 384, y: 900, width: 50, height: 50)
+        self.theButton = UIButton(frame: rect)
+        let image = UIImage(named: "roo.png")
+        theButton.setImage(image, for: .normal)
+        theButton.backgroundColor = .black
+        let longPress = UILongPressGestureRecognizer(target: self, action: #selector(self.longPressGesture) )
+        theButton.addGestureRecognizer(longPress)
+        
+        self.view.addSubview(theButton)
+        
+    }
+    
+    func longPressGesture() {
+        
+    }
+    
     @IBAction func tett(_ sender: AnyObject) {
         
-//        let ptr = UIViewController(nibName: <#T##String?#>, bundle: <#T##Bundle?#>)
-//        
+//        let ptr = self.storyboard?.instantiateViewController(withIdentifier: "InfoAlertViewController")        as! InfoAlertViewController
+        
+        
+        
     }
     
     

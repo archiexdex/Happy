@@ -8,7 +8,7 @@
 
 import UIKit
 
-class InfoAlertViewController: UIViewController {
+class InfoAlertViewController: UIAlertController {
 
     // MARK: IBOutlet
     @IBOutlet weak var theTitle: UILabel!
@@ -18,6 +18,8 @@ class InfoAlertViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
