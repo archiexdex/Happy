@@ -14,18 +14,33 @@
 		EC331C131D9FEAC10031F1D9 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC331C121D9FEAC10031F1D9 /* QuartzCore.framework */; };
 		EC331C161D9FFEFE0031F1D9 /* InfoAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC331C141D9FFEFE0031F1D9 /* InfoAlertViewController.swift */; };
 		EC3FD13F1DA06F6E00235130 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3FD13E1DA06F6E00235130 /* Constants.swift */; };
-		EC3FD1611DA07BEC00235130 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD1551DA07BEC00235130 /* arrow.png */; };
-		EC3FD1621DA07BEC00235130 /* roo.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD1561DA07BEC00235130 /* roo.png */; };
-		EC3FD1631DA07BEC00235130 /* 照妖鏡頭-01.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD1571DA07BEC00235130 /* 照妖鏡頭-01.png */; };
-		EC3FD1641DA07BEC00235130 /* FinishFight.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD1581DA07BEC00235130 /* FinishFight.png */; };
-		EC3FD1651DA07BEC00235130 /* UserInfo.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD1591DA07BEC00235130 /* UserInfo.png */; };
-		EC3FD1661DA07BEC00235130 /* 照妖鏡頭-05.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD15A1DA07BEC00235130 /* 照妖鏡頭-05.png */; };
-		EC3FD1671DA07BEC00235130 /* 照妖鏡頭-06.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD15B1DA07BEC00235130 /* 照妖鏡頭-06.png */; };
-		EC3FD1681DA07BEC00235130 /* 照妖鏡頭-07.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD15C1DA07BEC00235130 /* 照妖鏡頭-07.png */; };
-		EC3FD1691DA07BEC00235130 /* 照妖鏡頭-10.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD15D1DA07BEC00235130 /* 照妖鏡頭-10.png */; };
-		EC3FD16A1DA07BEC00235130 /* 照妖鏡頭-11.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD15E1DA07BEC00235130 /* 照妖鏡頭-11.png */; };
-		EC3FD16B1DA07BEC00235130 /* 照妖鏡頭-12.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD15F1DA07BEC00235130 /* 照妖鏡頭-12.png */; };
-		EC3FD16C1DA07BEC00235130 /* 照妖鏡頭-13.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD1601DA07BEC00235130 /* 照妖鏡頭-13.png */; };
+		EC3FD1721DA0908E00235130 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3FD1711DA0908E00235130 /* UserInfoViewController.swift */; };
+		EC3FD1741DA090A200235130 /* FinishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3FD1731DA090A200235130 /* FinishViewController.swift */; };
+		EC3FD1B41DA091F600235130 /* Amulet.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD19F1DA091F600235130 /* Amulet.png */; };
+		EC3FD1B51DA091F600235130 /* arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD1A01DA091F600235130 /* arrow.png */; };
+		EC3FD1B61DA091F600235130 /* FinishFight.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD1A11DA091F600235130 /* FinishFight.png */; };
+		EC3FD1B71DA091F600235130 /* roo.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD1A21DA091F600235130 /* roo.png */; };
+		EC3FD1B91DA091F600235130 /* hurt.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD1A41DA091F600235130 /* hurt.png */; };
+		EC3FD1BA1DA091F600235130 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD1A51DA091F600235130 /* background.png */; };
+		EC3FD1BB1DA091F600235130 /* sword.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD1A61DA091F600235130 /* sword.png */; };
+		EC3FD1BC1DA091F600235130 /* splash.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD1A71DA091F600235130 /* splash.png */; };
+		EC3FD1BD1DA091F600235130 /* frame.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD1A81DA091F600235130 /* frame.png */; };
+		EC3FD1BE1DA091F600235130 /* finish.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD1A91DA091F600235130 /* finish.png */; };
+		EC3FD1BF1DA091F600235130 /* userinfo.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD1AA1DA091F600235130 /* userinfo.png */; };
+		EC3FD1C01DA091F600235130 /* customButton.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD1AB1DA091F600235130 /* customButton.png */; };
+		EC3FD1C11DA091F600235130 /* p4.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD1AC1DA091F600235130 /* p4.png */; };
+		EC3FD1C21DA091F600235130 /* p3.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD1AD1DA091F600235130 /* p3.png */; };
+		EC3FD1C31DA091F600235130 /* p2.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD1AE1DA091F600235130 /* p2.png */; };
+		EC3FD1C41DA091F600235130 /* p1.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD1AF1DA091F600235130 /* p1.png */; };
+		EC3FD1C51DA091F600235130 /* userinfo2.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD1B01DA091F600235130 /* userinfo2.png */; };
+		EC3FD1C71DA091F600235130 /* usericon.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD1B21DA091F600235130 /* usericon.png */; };
+		EC3FD1C81DA091F600235130 /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD1B31DA091F600235130 /* location.png */; };
+		EC3FD1CA1DA094C200235130 /* mirror.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD1C91DA094C200235130 /* mirror.png */; };
+		EC3FD1CD1DA09AC600235130 /* whiteX.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD1CB1DA09AC600235130 /* whiteX.png */; };
+		EC3FD1CE1DA09AC600235130 /* blackX.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD1CC1DA09AC600235130 /* blackX.png */; };
+		EC3FD1D11DA09DB400235130 /* monster0.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD1CF1DA09DB400235130 /* monster0.png */; };
+		EC3FD1D21DA09DB400235130 /* monster1.png in Resources */ = {isa = PBXBuildFile; fileRef = EC3FD1D01DA09DB400235130 /* monster1.png */; };
+		EC3FD1D41DA0A1DA00235130 /* FightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC3FD1D31DA0A1DA00235130 /* FightViewController.swift */; };
 		EC52B08B1D9F863B00FC0725 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52B08A1D9F863B00FC0725 /* AppDelegate.swift */; };
 		EC52B08D1D9F863B00FC0725 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC52B08C1D9F863B00FC0725 /* ViewController.swift */; };
 		EC52B0901D9F863B00FC0725 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC52B08E1D9F863B00FC0725 /* Main.storyboard */; };
@@ -65,18 +80,33 @@
 		EC331C121D9FEAC10031F1D9 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		EC331C141D9FFEFE0031F1D9 /* InfoAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoAlertViewController.swift; sourceTree = "<group>"; };
 		EC3FD13E1DA06F6E00235130 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		EC3FD1551DA07BEC00235130 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
-		EC3FD1561DA07BEC00235130 /* roo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roo.png; sourceTree = "<group>"; };
-		EC3FD1571DA07BEC00235130 /* 照妖鏡頭-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "照妖鏡頭-01.png"; sourceTree = "<group>"; };
-		EC3FD1581DA07BEC00235130 /* FinishFight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FinishFight.png; sourceTree = "<group>"; };
-		EC3FD1591DA07BEC00235130 /* UserInfo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UserInfo.png; sourceTree = "<group>"; };
-		EC3FD15A1DA07BEC00235130 /* 照妖鏡頭-05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "照妖鏡頭-05.png"; sourceTree = "<group>"; };
-		EC3FD15B1DA07BEC00235130 /* 照妖鏡頭-06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "照妖鏡頭-06.png"; sourceTree = "<group>"; };
-		EC3FD15C1DA07BEC00235130 /* 照妖鏡頭-07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "照妖鏡頭-07.png"; sourceTree = "<group>"; };
-		EC3FD15D1DA07BEC00235130 /* 照妖鏡頭-10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "照妖鏡頭-10.png"; sourceTree = "<group>"; };
-		EC3FD15E1DA07BEC00235130 /* 照妖鏡頭-11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "照妖鏡頭-11.png"; sourceTree = "<group>"; };
-		EC3FD15F1DA07BEC00235130 /* 照妖鏡頭-12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "照妖鏡頭-12.png"; sourceTree = "<group>"; };
-		EC3FD1601DA07BEC00235130 /* 照妖鏡頭-13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "照妖鏡頭-13.png"; sourceTree = "<group>"; };
+		EC3FD1711DA0908E00235130 /* UserInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		EC3FD1731DA090A200235130 /* FinishViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinishViewController.swift; sourceTree = "<group>"; };
+		EC3FD19F1DA091F600235130 /* Amulet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Amulet.png; sourceTree = "<group>"; };
+		EC3FD1A01DA091F600235130 /* arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow.png; sourceTree = "<group>"; };
+		EC3FD1A11DA091F600235130 /* FinishFight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FinishFight.png; sourceTree = "<group>"; };
+		EC3FD1A21DA091F600235130 /* roo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = roo.png; sourceTree = "<group>"; };
+		EC3FD1A41DA091F600235130 /* hurt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hurt.png; sourceTree = "<group>"; };
+		EC3FD1A51DA091F600235130 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		EC3FD1A61DA091F600235130 /* sword.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sword.png; sourceTree = "<group>"; };
+		EC3FD1A71DA091F600235130 /* splash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = splash.png; sourceTree = "<group>"; };
+		EC3FD1A81DA091F600235130 /* frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame.png; sourceTree = "<group>"; };
+		EC3FD1A91DA091F600235130 /* finish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = finish.png; sourceTree = "<group>"; };
+		EC3FD1AA1DA091F600235130 /* userinfo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userinfo.png; sourceTree = "<group>"; };
+		EC3FD1AB1DA091F600235130 /* customButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = customButton.png; sourceTree = "<group>"; };
+		EC3FD1AC1DA091F600235130 /* p4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p4.png; sourceTree = "<group>"; };
+		EC3FD1AD1DA091F600235130 /* p3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p3.png; sourceTree = "<group>"; };
+		EC3FD1AE1DA091F600235130 /* p2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p2.png; sourceTree = "<group>"; };
+		EC3FD1AF1DA091F600235130 /* p1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p1.png; sourceTree = "<group>"; };
+		EC3FD1B01DA091F600235130 /* userinfo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = userinfo2.png; sourceTree = "<group>"; };
+		EC3FD1B21DA091F600235130 /* usericon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usericon.png; sourceTree = "<group>"; };
+		EC3FD1B31DA091F600235130 /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
+		EC3FD1C91DA094C200235130 /* mirror.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mirror.png; sourceTree = "<group>"; };
+		EC3FD1CB1DA09AC600235130 /* whiteX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteX.png; sourceTree = "<group>"; };
+		EC3FD1CC1DA09AC600235130 /* blackX.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blackX.png; sourceTree = "<group>"; };
+		EC3FD1CF1DA09DB400235130 /* monster0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monster0.png; sourceTree = "<group>"; };
+		EC3FD1D01DA09DB400235130 /* monster1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = monster1.png; sourceTree = "<group>"; };
+		EC3FD1D31DA0A1DA00235130 /* FightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FightViewController.swift; sourceTree = "<group>"; };
 		EC52B0871D9F863B00FC0725 /* Happy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Happy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC52B08A1D9F863B00FC0725 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC52B08C1D9F863B00FC0725 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -138,18 +168,30 @@
 		EC3FD1541DA07BEC00235130 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				EC3FD1551DA07BEC00235130 /* arrow.png */,
-				EC3FD1561DA07BEC00235130 /* roo.png */,
-				EC3FD1571DA07BEC00235130 /* 照妖鏡頭-01.png */,
-				EC3FD1581DA07BEC00235130 /* FinishFight.png */,
-				EC3FD1591DA07BEC00235130 /* UserInfo.png */,
-				EC3FD15A1DA07BEC00235130 /* 照妖鏡頭-05.png */,
-				EC3FD15B1DA07BEC00235130 /* 照妖鏡頭-06.png */,
-				EC3FD15C1DA07BEC00235130 /* 照妖鏡頭-07.png */,
-				EC3FD15D1DA07BEC00235130 /* 照妖鏡頭-10.png */,
-				EC3FD15E1DA07BEC00235130 /* 照妖鏡頭-11.png */,
-				EC3FD15F1DA07BEC00235130 /* 照妖鏡頭-12.png */,
-				EC3FD1601DA07BEC00235130 /* 照妖鏡頭-13.png */,
+				EC3FD19F1DA091F600235130 /* Amulet.png */,
+				EC3FD1A01DA091F600235130 /* arrow.png */,
+				EC3FD1A11DA091F600235130 /* FinishFight.png */,
+				EC3FD1A21DA091F600235130 /* roo.png */,
+				EC3FD1A41DA091F600235130 /* hurt.png */,
+				EC3FD1A51DA091F600235130 /* background.png */,
+				EC3FD1A61DA091F600235130 /* sword.png */,
+				EC3FD1A71DA091F600235130 /* splash.png */,
+				EC3FD1A81DA091F600235130 /* frame.png */,
+				EC3FD1CB1DA09AC600235130 /* whiteX.png */,
+				EC3FD1CC1DA09AC600235130 /* blackX.png */,
+				EC3FD1A91DA091F600235130 /* finish.png */,
+				EC3FD1C91DA094C200235130 /* mirror.png */,
+				EC3FD1AA1DA091F600235130 /* userinfo.png */,
+				EC3FD1AB1DA091F600235130 /* customButton.png */,
+				EC3FD1AC1DA091F600235130 /* p4.png */,
+				EC3FD1AD1DA091F600235130 /* p3.png */,
+				EC3FD1AE1DA091F600235130 /* p2.png */,
+				EC3FD1AF1DA091F600235130 /* p1.png */,
+				EC3FD1B01DA091F600235130 /* userinfo2.png */,
+				EC3FD1B21DA091F600235130 /* usericon.png */,
+				EC3FD1CF1DA09DB400235130 /* monster0.png */,
+				EC3FD1D01DA09DB400235130 /* monster1.png */,
+				EC3FD1B31DA091F600235130 /* location.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -183,6 +225,9 @@
 				EC52B08C1D9F863B00FC0725 /* ViewController.swift */,
 				EC331C061D9FD1410031F1D9 /* LocationManager.swift */,
 				EC331C041D9FD0020031F1D9 /* GoogleMapViewController.swift */,
+				EC3FD1711DA0908E00235130 /* UserInfoViewController.swift */,
+				EC3FD1731DA090A200235130 /* FinishViewController.swift */,
+				EC3FD1D31DA0A1DA00235130 /* FightViewController.swift */,
 				EC3FD13E1DA06F6E00235130 /* Constants.swift */,
 				EC331C141D9FFEFE0031F1D9 /* InfoAlertViewController.swift */,
 				EC52B08E1D9F863B00FC0725 /* Main.storyboard */,
@@ -297,7 +342,7 @@
 				TargetAttributes = {
 					EC52B0861D9F863A00FC0725 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 9H65KG3QQT;
+						DevelopmentTeam = Z23R6WVG3X;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -353,21 +398,33 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC3FD1681DA07BEC00235130 /* 照妖鏡頭-07.png in Resources */,
-				EC3FD16A1DA07BEC00235130 /* 照妖鏡頭-11.png in Resources */,
-				EC3FD16C1DA07BEC00235130 /* 照妖鏡頭-13.png in Resources */,
 				EC52B0981D9F863B00FC0725 /* LaunchScreen.storyboard in Resources */,
-				EC3FD1641DA07BEC00235130 /* FinishFight.png in Resources */,
-				EC3FD1651DA07BEC00235130 /* UserInfo.png in Resources */,
+				EC3FD1BE1DA091F600235130 /* finish.png in Resources */,
+				EC3FD1C81DA091F600235130 /* location.png in Resources */,
+				EC3FD1B41DA091F600235130 /* Amulet.png in Resources */,
+				EC3FD1C41DA091F600235130 /* p1.png in Resources */,
+				EC3FD1CA1DA094C200235130 /* mirror.png in Resources */,
 				EC52B0951D9F863B00FC0725 /* Assets.xcassets in Resources */,
-				EC3FD1621DA07BEC00235130 /* roo.png in Resources */,
+				EC3FD1B61DA091F600235130 /* FinishFight.png in Resources */,
+				EC3FD1B51DA091F600235130 /* arrow.png in Resources */,
+				EC3FD1BD1DA091F600235130 /* frame.png in Resources */,
+				EC3FD1C71DA091F600235130 /* usericon.png in Resources */,
+				EC3FD1BF1DA091F600235130 /* userinfo.png in Resources */,
+				EC3FD1BB1DA091F600235130 /* sword.png in Resources */,
 				EC52B0901D9F863B00FC0725 /* Main.storyboard in Resources */,
-				EC3FD1671DA07BEC00235130 /* 照妖鏡頭-06.png in Resources */,
-				EC3FD1611DA07BEC00235130 /* arrow.png in Resources */,
-				EC3FD1631DA07BEC00235130 /* 照妖鏡頭-01.png in Resources */,
-				EC3FD1661DA07BEC00235130 /* 照妖鏡頭-05.png in Resources */,
-				EC3FD1691DA07BEC00235130 /* 照妖鏡頭-10.png in Resources */,
-				EC3FD16B1DA07BEC00235130 /* 照妖鏡頭-12.png in Resources */,
+				EC3FD1CD1DA09AC600235130 /* whiteX.png in Resources */,
+				EC3FD1C31DA091F600235130 /* p2.png in Resources */,
+				EC3FD1D21DA09DB400235130 /* monster1.png in Resources */,
+				EC3FD1C21DA091F600235130 /* p3.png in Resources */,
+				EC3FD1CE1DA09AC600235130 /* blackX.png in Resources */,
+				EC3FD1C51DA091F600235130 /* userinfo2.png in Resources */,
+				EC3FD1C01DA091F600235130 /* customButton.png in Resources */,
+				EC3FD1B91DA091F600235130 /* hurt.png in Resources */,
+				EC3FD1D11DA09DB400235130 /* monster0.png in Resources */,
+				EC3FD1B71DA091F600235130 /* roo.png in Resources */,
+				EC3FD1BA1DA091F600235130 /* background.png in Resources */,
+				EC3FD1C11DA091F600235130 /* p4.png in Resources */,
+				EC3FD1BC1DA091F600235130 /* splash.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,8 +498,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC331C161D9FFEFE0031F1D9 /* InfoAlertViewController.swift in Sources */,
+				EC3FD1721DA0908E00235130 /* UserInfoViewController.swift in Sources */,
+				EC3FD1741DA090A200235130 /* FinishViewController.swift in Sources */,
 				EC331C051D9FD0020031F1D9 /* GoogleMapViewController.swift in Sources */,
 				EC331C071D9FD1420031F1D9 /* LocationManager.swift in Sources */,
+				EC3FD1D41DA0A1DA00235130 /* FightViewController.swift in Sources */,
 				EC52B08D1D9F863B00FC0725 /* ViewController.swift in Sources */,
 				EC52B08B1D9F863B00FC0725 /* AppDelegate.swift in Sources */,
 				EC52B0931D9F863B00FC0725 /* Happy.xcdatamodeld in Sources */,
@@ -599,7 +659,7 @@
 			baseConfigurationReference = E40C3313C774A7C3C8A404FE /* Pods-Happy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9H65KG3QQT;
+				DEVELOPMENT_TEAM = Z23R6WVG3X;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -607,7 +667,7 @@
 				);
 				INFOPLIST_FILE = Happy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "HSIN-CHIH-YANG.Happy";
+				PRODUCT_BUNDLE_IDENTIFIER = willy1896.Happy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -618,7 +678,7 @@
 			baseConfigurationReference = 6308B8B9E0AC1E585B4E3ED2 /* Pods-Happy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 9H65KG3QQT;
+				DEVELOPMENT_TEAM = Z23R6WVG3X;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -626,7 +686,7 @@
 				);
 				INFOPLIST_FILE = Happy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "HSIN-CHIH-YANG.Happy";
+				PRODUCT_BUNDLE_IDENTIFIER = willy1896.Happy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};

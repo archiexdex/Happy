@@ -13,15 +13,27 @@ import Foundation
 class ViewController: UIViewController {
     
     // MARK: - Variable
+    // Camera View
     var captureSession      : AVCaptureSession?
     var videoPreviewLayer   : AVCaptureVideoPreviewLayer?
     var stillImageOutput    : AVCaptureStillImageOutput?
     var locationManager     : LocationManager?
-    var theButton           : UIButton!
-    var theBiggerView       : UIImageView!
-    var theArrow            : UIImageView!
+    
+    // Other Views
+    var theMirror           : UIButton! // mirror
+    var theFrame            : UIImageView!
+    var theSword            : UIImageView!
+    var theGoast            : UIImageView!
+    
+    // Time
     var theTime             : Timer?
     var count               : Int?
+    var interval            : Int = 7000
+    
+    // Flag
+    var isGoastAppear       : Int = 0
+    var isSwordAppear       : Int = 0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,10 +44,21 @@ class ViewController: UIViewController {
 //        locationManager?.requestAlwaysInUse()
         self.theTime = Timer.scheduledTimer(timeInterval: 0.0, target: self, selector: #selector(ViewController.counter), userInfo: nil, repeats: true)
         self.count = 0
+        
+        // Camera
         self.viewSetting()
-        self.buttonSetting()
-        self.biggerViewSetting()
-        self.arrowViewSetting()
+        
+        // Mirror
+        self.mirrorViewSetting()
+        
+        // Frame
+        self.frameViewSetting()
+        
+        // Sword
+        self.swordViewSetting()
+        
+        // Goast
+        self.goastViewSetting()
     }
 
     override func didReceiveMemoryWarning() {
@@ -91,65 +114,103 @@ class ViewController: UIViewController {
         captureSession?.startRunning()
     }
     
-    func buttonSetting() {
+    func mirrorViewSetting() {
         
-        let rect = CGRect(x: 384, y: 900, width: 50, height: 50)
-        self.theButton = UIButton(frame: rect)
-        let image = UIImage(named: "roo.png")
-        theButton.setImage(image, for: .normal)
-        theButton.backgroundColor = .black
+        let rect = CGRect(x: 148 , y: 554, width: 79, height: 79)
+        self.theMirror = UIButton(frame: rect)
+        let image = UIImage(named: "mirror.png")
+        theMirror.setImage(image, for: .normal)
+        theMirror.backgroundColor = .black
         let longPress = UILongPressGestureRecognizer(target: self, action: #selector(ViewController.longPressGesture(sender:)))
-        theButton.addGestureRecognizer(longPress)
+        theMirror.addGestureRecognizer(longPress)
         
-        self.view.addSubview(theButton)
+        self.view.addSubview(theMirror)
         
     }
     
-    func biggerViewSetting() {
+    func frameViewSetting() {
         
-        let rect = CGRect(x: 384, y: 750, width: 75, height: 100)
-        self.theBiggerView = UIImageView(image: UIImage(named: "roo.png"))
-        self.theBiggerView.frame = rect
-        // Set
-        self.theBiggerView.alpha = 0
+        let image = UIImage(named: "frame.png")
+        self.theFrame = UIImageView(image: image)
+        self.theFrame.frame = self.view.frame
+        self.theFrame.alpha = 0
         
-        self.view.addSubview(self.theBiggerView)
+        self.view.addSubview(self.theFrame)
     }
     
+    func swordViewSetting() {
+        
+        let rect = CGRect(x: 65, y: 131, width: 245, height: 48)
+        let image = UIImage(named: "sword.png")
+        self.theSword = UIImageView(image: image)
+        self.theSword.frame = rect
+        self.theSword.alpha = 1
+        
+        self.view.addSubview(self.theSword)
+    }
+    
+    func goastViewSetting() {
+      
+        
+        let rect = CGRect(x: self.view.frame.size.height / 2 , y: self.view.frame.size.width / 2 , width: 150, height: 250)
+        let image = UIImage(named: "monster0.png")
+        self.theGoast = UIImageView(image: image)
+        self.theGoast.frame = rect
+        self.theGoast.alpha = 0
+        
+        self.view.addSubview(self.theGoast)
+        
+    }
+    
+    
+    // MARK: - Function
     func longPressGesture(sender : UILongPressGestureRecognizer){
         print("Long tap")
         if sender.state == .ended {
             print("UIGestureRecognizerStateEnded")
             //Do Whatever You want on End of Gesture
-            self.theBiggerView.alpha = 0
+            self.theFrame.alpha = 0
             self.viewDidAppear(true)
         }
         else if sender.state == .began {
             print("UIGestureRecognizerStateBegan.")
             //Do Whatever You want on Began of Gesture
-            self.theBiggerView.alpha = 1
+            self.theFrame.alpha = 1
             self.viewDidAppear(true)
         }
     }
     
-    func arrowViewSetting() {
+    func counter() {
+        self.count = self.count! + 1
         
-        let image = UIImage(named: "arrow.png")
-        self.theArrow = UIImageView(image: image)
-        self.theArrow.frame = CGRect(x: 192, y: 252, width: 256, height: 256)
-        self.view.addSubview(theArrow)
+        if self.isGoastAppear == 10 {
+            self.isSwordAppear  = 1
+            self.interval = 3000
+            
+            self.theGoast.alpha = 1
+            self.theSword.alpha = 0
+            self.viewDidAppear(true)
+        }
+        
+        if self.count == self.interval {
+            if self.isSwordAppear == 0 {
+                self.theSword.alpha = 1 - self.theSword.alpha
+                
+                self.viewDidAppear(true)
+            }
+            
+            if self.isGoastAppear == 14 {
+                self.theGoast.alpha = 1 - self.theGoast.alpha
+                self.viewDidAppear(true)
+            }
+            
+            self.isGoastAppear = self.isGoastAppear + 1
+            self.count = 0
+        }
+        
         
     }
     
-    // MARK: - Function
-    func counter() {
-        self.count = self.count! + 1
-        if self.count == 7000 {
-            self.theArrow.alpha = 1 - self.theArrow.alpha
-            self.count = 0
-        }
-//        print(self.count)
-    }
     
 }
 

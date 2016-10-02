@@ -82,40 +82,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LJ7-Ms-XkJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1606" y="-3"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="YMS-dd-IoP">
-            <objects>
-                <viewController id="QH6-fu-w2e" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="hyR-T0-wVo"/>
-                        <viewControllerLayoutGuide type="bottom" id="E1o-Zp-MIe"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="3MO-F4-sZS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="照妖鏡頭-01.png" translatesAutoresizingMaskIntoConstraints="NO" id="8ZO-ag-e5S">
-                                <frame key="frameInset" width="414" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GBu-VE-Z3C">
-                                <frame key="frameInset" minX="184" minY="607" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.69570071489295415" green="1" blue="0.40319386628408393" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="cxU-Yk-LL3" kind="show" id="EkP-wd-35O"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0gl-Qf-CcD" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1350.7246376811595" y="449.18478260869568"/>
+            <point key="canvasLocation" x="-2427" y="-16"/>
         </scene>
         <!--Google Map View Controller-->
         <scene sceneID="qTC-OY-oaO">
@@ -126,7 +93,7 @@
                         <viewControllerLayoutGuide type="bottom" id="3Bq-ke-ID2"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="mi9-Hm-hNl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="SvG-Oz-BAZ"/>
@@ -140,7 +107,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ksd-Bf-1hX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-521" y="346"/>
+            <point key="canvasLocation" x="-988" y="451"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -151,88 +118,41 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="0.82904436357205658" blue="0.96157258251304667" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="374" y="45"/>
+            <point key="canvasLocation" x="-281" y="451"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Koi-H9-9ki">
-            <objects>
-                <viewController id="TjW-j2-Rav" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Uck-t2-Fzb"/>
-                        <viewControllerLayoutGuide type="bottom" id="mDo-q4-Vrl"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="lwD-4e-WVO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="照妖鏡頭-11.png" translatesAutoresizingMaskIntoConstraints="NO" id="xkU-k4-OgC">
-                                <frame key="frameInset" minX="108" minY="450" width="134" height="197"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="照妖鏡頭-07.png" translatesAutoresizingMaskIntoConstraints="NO" id="ofV-qg-kHK">
-                                <frame key="frameInset" width="414" height="728"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="201610011618441000.png" translatesAutoresizingMaskIntoConstraints="NO" id="l1O-hZ-1AN">
-                                <frame key="frameInset" minX="213" minY="40" width="154" height="181"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="照妖鏡頭-05.png" translatesAutoresizingMaskIntoConstraints="NO" id="6LY-mp-i94">
-                                <frame key="frameInset" minX="225" minY="10" width="122" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="HP" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7E7-1C-1at">
-                                <frame key="frameInset" minX="213" minY="17" width="37" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" red="1" green="0.1354814423" blue="0.23895417930000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="取消淨化" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BbA-Fc-aeA">
-                                <frame key="frameInset" minX="31" minY="28" width="80" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9ne-v5-J6k" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="856.52173913043487" y="-115.7608695652174"/>
-        </scene>
-        <!--View Controller-->
+        <!--Finish View Controller-->
         <scene sceneID="UKd-7r-h6l">
             <objects>
-                <viewController id="xP9-13-fPd" sceneMemberID="viewController">
+                <viewController id="xP9-13-fPd" customClass="FinishViewController" customModule="Happy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Rjg-bI-oo2"/>
                         <viewControllerLayoutGuide type="bottom" id="IXb-I5-Unm"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="TOO-0h-dIa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="照妖鏡頭-03.png" translatesAutoresizingMaskIntoConstraints="NO" id="f2m-qK-JMS">
-                                <frame key="frameInset" width="414" height="736"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FinishFight.png" translatesAutoresizingMaskIntoConstraints="NO" id="f2m-qK-JMS"/>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="f2m-qK-JMS" firstAttribute="leading" secondItem="TOO-0h-dIa" secondAttribute="leading" id="05w-Ic-8RI"/>
+                            <constraint firstItem="f2m-qK-JMS" firstAttribute="top" secondItem="TOO-0h-dIa" secondAttribute="top" id="M6D-lo-KzV"/>
+                            <constraint firstItem="IXb-I5-Unm" firstAttribute="top" secondItem="f2m-qK-JMS" secondAttribute="bottom" id="PvZ-kk-w0c"/>
+                            <constraint firstAttribute="trailing" secondItem="f2m-qK-JMS" secondAttribute="trailing" id="QjC-Pa-4VG"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9dq-3z-MYs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1615.9420289855075" y="-116.57608695652175"/>
+            <point key="canvasLocation" x="-988" y="-233"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xgQ-st-ite">
@@ -243,7 +163,7 @@
                         <viewControllerLayoutGuide type="bottom" id="jG6-PA-xCy"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bLa-cz-YtY">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="照妖鏡頭-10.png" translatesAutoresizingMaskIntoConstraints="NO" id="fga-SY-71O">
@@ -258,39 +178,134 @@
             </objects>
             <point key="canvasLocation" x="4108" y="-100.29985007496252"/>
         </scene>
-        <!--View Controller-->
+        <!--User Info View Controller-->
         <scene sceneID="sWP-4R-XYx">
             <objects>
-                <viewController id="L9H-Bg-CW5" sceneMemberID="viewController">
+                <viewController id="L9H-Bg-CW5" customClass="UserInfoViewController" customModule="Happy" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RaS-8A-boE"/>
                         <viewControllerLayoutGuide type="bottom" id="MsK-xs-iLb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kaA-oH-mFw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="照妖鏡頭-04.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ea2-ct-mhb">
-                                <frame key="frameInset" width="414" height="736"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4gI-3k-Y8j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2414.4927536231885" y="-116.57608695652175"/>
+            <point key="canvasLocation" x="-282" y="-233"/>
+        </scene>
+        <!--Splash View Controller-->
+        <scene sceneID="Fk8-Aa-dzo">
+            <objects>
+                <viewController id="grd-ku-OKE" customClass="SplashViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zUQ-b5-GKP"/>
+                        <viewControllerLayoutGuide type="bottom" id="UDI-mm-t5D"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yIT-rK-QNl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="splash.png" translatesAutoresizingMaskIntoConstraints="NO" id="RI8-7n-Klr">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xuv-zz-JHb">
+                                <frame key="frameInset" minX="67" minY="572" width="240" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w87-rj-coc">
+                                        <frame key="frameInset" minX="39" minY="18" width="163" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
+                                        <state key="normal" title="Start Game">
+                                            <color key="titleColor" red="0.82745098039999998" green="0.81568627449999997" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startGame:" destination="grd-ku-OKE" eventType="touchUpInside" id="fQv-UF-5K5"/>
+                                            <segue destination="cxU-Yk-LL3" kind="show" id="wWH-R1-83j"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ryi-hy-PSu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1679" y="452"/>
+        </scene>
+        <!--Fight View Controller-->
+        <scene sceneID="mqg-No-kge">
+            <objects>
+                <viewController storyboardIdentifier="FightViewController" id="wRw-hr-huX" customClass="FightViewController" customModule="Happy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="w9p-ZD-0d3"/>
+                        <viewControllerLayoutGuide type="bottom" id="D0b-Tc-s9C"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="12Y-eD-55J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="monster.png" translatesAutoresizingMaskIntoConstraints="NO" id="aI1-kG-wwj">
+                                <frame key="frameInset" minX="183" minY="57" width="161" height="144"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="oP2-CO-t5e">
+                                <frame key="frameInset" minX="29" minY="209" width="315" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csZ-9w-Yuu">
+                                <frame key="frameInset" minX="154" width="67" height="140" maxY="27"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                <state key="normal" title="Attack"/>
+                                <connections>
+                                    <action selector="attack:" destination="wRw-hr-huX" eventType="touchUpInside" id="LMv-eb-sBs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="200" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YN8-4Y-V3s">
+                                <frame key="frameInset" minX="256" minY="219" width="88" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHE-wP-AaG">
+                                <frame key="frameInset" minX="29" minY="180" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Amulet.png" translatesAutoresizingMaskIntoConstraints="NO" id="hUg-o9-BVC">
+                                <frame key="frameInset" minX="119" minY="285" width="134" height="281"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="amplitudeLabel" destination="YN8-4Y-V3s" id="hcF-o3-UnK"/>
+                        <outlet property="amuletImg" destination="hUg-o9-BVC" id="sJt-4c-cX6"/>
+                        <outlet property="attackBtn" destination="csZ-9w-Yuu" id="fjB-Rr-BeQ"/>
+                        <outlet property="hpProgress" destination="oP2-CO-t5e" id="KIR-PA-m1C"/>
+                        <outlet property="monsterImage" destination="aI1-kG-wwj" id="gw6-AW-jHW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZbJ-EU-jKu" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1679" y="-232"/>
         </scene>
     </scenes>
     <resources>
-        <image name="201610011618441000.png" width="3125" height="5558"/>
-        <image name="照妖鏡頭-01.png" width="3125" height="5558"/>
-        <image name="照妖鏡頭-03.png" width="3125" height="5558"/>
-        <image name="照妖鏡頭-04.png" width="3125" height="5558"/>
-        <image name="照妖鏡頭-05.png" width="1128" height="550"/>
-        <image name="照妖鏡頭-07.png" width="3125" height="5558"/>
+        <image name="Amulet.png" width="1388" height="2250"/>
+        <image name="FinishFight.png" width="3125" height="5558"/>
+        <image name="monster.png" width="3125" height="5558"/>
+        <image name="splash.png" width="3125" height="5558"/>
         <image name="照妖鏡頭-10.png" width="3125" height="5558"/>
-        <image name="照妖鏡頭-11.png" width="1388" height="2250"/>
     </resources>
 </document>
