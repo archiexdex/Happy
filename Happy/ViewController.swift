@@ -120,7 +120,6 @@ class ViewController: UIViewController {
         self.theMirror = UIButton(frame: rect)
         let image = UIImage(named: "mirror.png")
         theMirror.setImage(image, for: .normal)
-        theMirror.backgroundColor = .black
         let longPress = UILongPressGestureRecognizer(target: self, action: #selector(ViewController.longPressGesture(sender:)))
         theMirror.addGestureRecognizer(longPress)
         
@@ -132,7 +131,7 @@ class ViewController: UIViewController {
         
         let image = UIImage(named: "frame.png")
         self.theFrame = UIImageView(image: image)
-        self.theFrame.frame = self.view.frame
+        self.theFrame.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
         self.theFrame.alpha = 0
         
         self.view.addSubview(self.theFrame)
@@ -152,7 +151,7 @@ class ViewController: UIViewController {
     func goastViewSetting() {
       
         
-        let rect = CGRect(x: self.view.frame.size.height / 2 , y: self.view.frame.size.width / 2 , width: 150, height: 250)
+        let rect = CGRect(x: 70 , y: 130 , width: 150, height: 250)
         let image = UIImage(named: "monster0.png")
         self.theGoast = UIImageView(image: image)
         self.theGoast.frame = rect
@@ -185,7 +184,7 @@ class ViewController: UIViewController {
         
         if self.isGoastAppear == 10 {
             self.isSwordAppear  = 1
-            self.interval = 3000
+            self.interval = 1500
             
             self.theGoast.alpha = 1
             self.theSword.alpha = 0
@@ -202,6 +201,7 @@ class ViewController: UIViewController {
             if self.isGoastAppear == 14 {
                 self.theGoast.alpha = 1 - self.theGoast.alpha
                 self.viewDidAppear(true)
+                nextVC()
             }
             
             self.isGoastAppear = self.isGoastAppear + 1
@@ -210,6 +210,19 @@ class ViewController: UIViewController {
         
         
     }
+    
+    func nextVC () {
+        
+        DispatchQueue.global(priority: DispatchQueue.GlobalQueuePriority.default).async(execute: {
+            
+            DispatchQueue.main.async(execute: {
+                //
+                let ptr = self.storyboard?.instantiateViewController(withIdentifier: "FightViewController") as! FightViewController
+                self.present(ptr, animated: true, completion: nil)
+            })
+        })
+    }
+    
     
     
 }
