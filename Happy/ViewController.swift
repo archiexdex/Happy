@@ -34,6 +34,9 @@ class ViewController: UIViewController {
     var isGoastAppear       : Int = 0
     var isSwordAppear       : Int = 0
     
+    // Audio
+    var music               : MusicHandler?
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,6 +62,9 @@ class ViewController: UIViewController {
         
         // Goast
         self.goastViewSetting()
+        
+        // music
+        self.music = MusicHandler.sharedInstance
     }
 
     override func didReceiveMemoryWarning() {
@@ -116,7 +122,7 @@ class ViewController: UIViewController {
     
     func mirrorViewSetting() {
         
-        let rect = CGRect(x: 148 , y: 554, width: 79, height: 79)
+        let rect = CGRect(x: 344 , y: 850, width: 100, height: 100)
         self.theMirror = UIButton(frame: rect)
         let image = UIImage(named: "mirror.png")
         theMirror.setImage(image, for: .normal)
@@ -139,7 +145,7 @@ class ViewController: UIViewController {
     
     func swordViewSetting() {
         
-        let rect = CGRect(x: 65, y: 131, width: 245, height: 48)
+        let rect = CGRect(x: 272, y: 240, width: 245, height: 48)
         let image = UIImage(named: "sword.png")
         self.theSword = UIImageView(image: image)
         self.theSword.frame = rect
@@ -151,7 +157,7 @@ class ViewController: UIViewController {
     func goastViewSetting() {
       
         
-        let rect = CGRect(x: 70 , y: 130 , width: 150, height: 250)
+        let rect = CGRect(x: 220 , y: 300 , width: 350, height: 500)
         let image = UIImage(named: "monster0.png")
         self.theGoast = UIImageView(image: image)
         self.theGoast.frame = rect
@@ -169,12 +175,14 @@ class ViewController: UIViewController {
             print("UIGestureRecognizerStateEnded")
             //Do Whatever You want on End of Gesture
             self.theFrame.alpha = 0
+            self.theMirror.adjustsImageWhenDisabled = false
             self.viewDidAppear(true)
         }
         else if sender.state == .began {
             print("UIGestureRecognizerStateBegan.")
             //Do Whatever You want on Began of Gesture
             self.theFrame.alpha = 1
+            self.theMirror.adjustsImageWhenDisabled = true
             self.viewDidAppear(true)
         }
     }
@@ -182,9 +190,9 @@ class ViewController: UIViewController {
     func counter() {
         self.count = self.count! + 1
         
-        if self.isGoastAppear == 10 {
+        if self.isGoastAppear == 15 {
             self.isSwordAppear  = 1
-            self.interval = 1500
+            self.interval = 2000
             
             self.theGoast.alpha = 1
             self.theSword.alpha = 0
@@ -198,9 +206,9 @@ class ViewController: UIViewController {
                 self.viewDidAppear(true)
             }
             
-            if self.isGoastAppear == 14 {
+            if self.isGoastAppear == 18 {
                 self.theGoast.alpha = 1 - self.theGoast.alpha
-                self.viewDidAppear(true)
+                
                 nextVC()
             }
             
@@ -217,6 +225,7 @@ class ViewController: UIViewController {
             
             DispatchQueue.main.async(execute: {
                 //
+                self.music?.stop()
                 let ptr = self.storyboard?.instantiateViewController(withIdentifier: "FightViewController") as! FightViewController
                 self.present(ptr, animated: true, completion: nil)
             })

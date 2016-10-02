@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="grd-ku-OKE">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -217,36 +217,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="splash.png" translatesAutoresizingMaskIntoConstraints="NO" id="RI8-7n-Klr">
-                                <frame key="frameInset" width="375" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash.png" translatesAutoresizingMaskIntoConstraints="NO" id="RI8-7n-Klr"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w87-rj-coc">
+                                <frame key="frameInset" minX="245" minY="879" width="251" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xuv-zz-JHb">
-                                <frame key="frameInset" minX="67" minY="572" width="240" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w87-rj-coc">
-                                        <frame key="frameInset" minX="39" minY="18" width="163" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
-                                        <state key="normal" title="Start Game">
-                                            <color key="titleColor" red="0.82745098039999998" green="0.81568627449999997" blue="0.71764705880000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="startGame:" destination="grd-ku-OKE" eventType="touchUpInside" id="fQv-UF-5K5"/>
-                                            <segue destination="cxU-Yk-LL3" kind="show" id="wWH-R1-83j"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                            </view>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="43"/>
+                                <state key="normal" title="Start Game">
+                                    <color key="titleColor" red="0.95249188354136127" green="0.90582879321168985" blue="0.10830088194594044" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="cxU-Yk-LL3" kind="show" id="wWH-R1-83j"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RI8-7n-Klr" firstAttribute="top" secondItem="yIT-rK-QNl" secondAttribute="top" id="38N-ZO-HFD"/>
+                            <constraint firstAttribute="trailing" secondItem="RI8-7n-Klr" secondAttribute="trailing" id="ORA-hF-BHB"/>
+                            <constraint firstItem="UDI-mm-t5D" firstAttribute="top" secondItem="RI8-7n-Klr" secondAttribute="bottom" id="T0e-uu-Nxw"/>
+                            <constraint firstItem="RI8-7n-Klr" firstAttribute="leading" secondItem="yIT-rK-QNl" secondAttribute="leading" id="dF4-T7-aeh"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ryi-hy-PSu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1679" y="452"/>
+            <point key="canvasLocation" x="-1679.6875" y="451.75781249999994"/>
         </scene>
         <!--Fight View Controller-->
         <scene sceneID="mqg-No-kge">
@@ -260,60 +257,75 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="monster.png" translatesAutoresizingMaskIntoConstraints="NO" id="aI1-kG-wwj">
-                                <frame key="frameInset" minX="183" minY="57" width="161" height="144"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="Lr2-9I-5AO"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="monster0.png" translatesAutoresizingMaskIntoConstraints="NO" id="aI1-kG-wwj">
+                                <frame key="frameInset" minX="440" minY="59" width="252" height="229"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="oP2-CO-t5e">
-                                <frame key="frameInset" minX="29" minY="209" width="315" height="2"/>
+                                <frame key="frameInset" minX="29" minY="209" width="385" height="2"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.14543978307911973" green="0.83624427356020936" blue="0.17771954578072244" alpha="1" colorSpace="calibratedRGB"/>
                             </progressView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csZ-9w-Yuu">
                                 <frame key="frameInset" minX="154" width="67" height="140" maxY="27"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                                 <state key="normal" title="Attack"/>
-                                <connections>
-                                    <action selector="attack:" destination="wRw-hr-huX" eventType="touchUpInside" id="LMv-eb-sBs"/>
-                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="200" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YN8-4Y-V3s">
-                                <frame key="frameInset" minX="256" minY="219" width="88" height="67"/>
+                                <frame key="frameInset" minX="248" minY="109" width="88" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="HP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHE-wP-AaG">
-                                <frame key="frameInset" minX="29" minY="180" width="42" height="21"/>
+                                <frame key="frameInset" minX="137" minY="118" width="84" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Amulet.png" translatesAutoresizingMaskIntoConstraints="NO" id="hUg-o9-BVC">
-                                <frame key="frameInset" minX="119" minY="285" width="134" height="281"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hurt.png" translatesAutoresizingMaskIntoConstraints="NO" id="GDU-im-GIT">
+                                <frame key="frameInset" minX="440" minY="59" width="252" height="244"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Amulet.png" translatesAutoresizingMaskIntoConstraints="NO" id="hUg-o9-BVC">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="379" id="6Bz-r0-0sC"/>
+                                    <constraint firstAttribute="width" constant="223" id="H7c-Ui-PzC"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hUg-o9-BVC" firstAttribute="leading" secondItem="Lr2-9I-5AO" secondAttribute="trailing" constant="-495" id="5Bq-Cp-rPP"/>
+                            <constraint firstAttribute="trailing" secondItem="Lr2-9I-5AO" secondAttribute="trailing" id="JDj-PR-bHt"/>
+                            <constraint firstItem="Lr2-9I-5AO" firstAttribute="top" secondItem="12Y-eD-55J" secondAttribute="top" id="JGE-y7-OoD"/>
+                            <constraint firstItem="D0b-Tc-s9C" firstAttribute="top" secondItem="Lr2-9I-5AO" secondAttribute="bottom" id="RwG-4j-56Z"/>
+                            <constraint firstItem="Lr2-9I-5AO" firstAttribute="leading" secondItem="12Y-eD-55J" secondAttribute="leading" id="fgW-I3-fgy"/>
+                            <constraint firstItem="hUg-o9-BVC" firstAttribute="top" secondItem="Lr2-9I-5AO" secondAttribute="bottom" constant="-577" id="mpx-Ss-Vcx"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="amplitudeLabel" destination="YN8-4Y-V3s" id="hcF-o3-UnK"/>
-                        <outlet property="amuletImg" destination="hUg-o9-BVC" id="sJt-4c-cX6"/>
-                        <outlet property="attackBtn" destination="csZ-9w-Yuu" id="fjB-Rr-BeQ"/>
-                        <outlet property="hpProgress" destination="oP2-CO-t5e" id="KIR-PA-m1C"/>
-                        <outlet property="monsterImage" destination="aI1-kG-wwj" id="gw6-AW-jHW"/>
+                        <outlet property="hpProgress" destination="oP2-CO-t5e" id="V4E-9S-h3O"/>
+                        <outlet property="theBigAmulet" destination="hUg-o9-BVC" id="umw-5Q-Z1j"/>
+                        <outlet property="theGoast" destination="aI1-kG-wwj" id="n80-EO-Hca"/>
+                        <outlet property="theHPText" destination="YN8-4Y-V3s" id="H79-KW-UJ8"/>
+                        <outlet property="theHurt" destination="GDU-im-GIT" id="dRs-gO-fqb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZbJ-EU-jKu" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1679" y="-232"/>
+            <point key="canvasLocation" x="-1679.6875" y="-232.61718749999997"/>
         </scene>
     </scenes>
     <resources>
         <image name="Amulet.png" width="1388" height="2250"/>
         <image name="FinishFight.png" width="3125" height="5558"/>
-        <image name="monster.png" width="3125" height="5558"/>
+        <image name="background.png" width="3134" height="5553"/>
+        <image name="hurt.png" width="2197" height="1583"/>
+        <image name="monster0.png" width="2449" height="3261"/>
         <image name="splash.png" width="3125" height="5558"/>
         <image name="userinfo.png" width="3125" height="5558"/>
         <image name="照妖鏡頭-10.png" width="3125" height="5558"/>

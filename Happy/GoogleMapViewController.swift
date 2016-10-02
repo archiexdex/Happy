@@ -63,7 +63,7 @@ class GoogleMapViewController: UIViewController {
             
             let marker = GMSMarker()
             marker.position = CLLocationCoordinate2DMake( goastList[ptr].latitude, goastList[ptr].longitude)
-            marker.icon = UIImage(named: "roo.png")
+            marker.icon = UIImage(named: "123.png")
             marker.map = mapView
         }
         

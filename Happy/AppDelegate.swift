@@ -10,17 +10,24 @@ import UIKit
 import CoreData
 import GoogleMaps
 
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
+//    var audioPlayer = AVAudioPlayer()
+//    var isPlaying = false
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
         // MARK: - GoogleAPI
         GMSServices.provideAPIKey("AIzaSyAOXPHSOvNKlm5nEYoIC-kmjbbmusk3Xho")
+        
+        //
+        let audioPlayer = MusicHandler.sharedInstance
+        audioPlayer.changeMusic(name: "Themes_music")
         
         return true
     }
